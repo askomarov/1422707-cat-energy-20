@@ -39,7 +39,6 @@
   <main class="main">
     <section class="catalog">
       <ul class="catalog__list">
-
         <li class="catalog__item catalog-item">
           <div class="catalog-item__img">
             <img src="#" alt="" />
@@ -51,7 +50,7 @@
             </svg>
           </div>
           <div class="catalog-item__text-content">
-            <p class="catalog-item__title">Cat Energy PRO 500 г</p>
+            <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
             <dl class="catalog-item__list">
               <div class="catalog-item__item">
                 <dt class="catalog-item__name">Объем</dt>
@@ -67,7 +66,6 @@
               </div>
             </dl>
           </div>
-
           <a href="#" class="btn catalog-item__btn">заказать</a>
         </li>
         <li class="catalog__item catalog-item">
@@ -255,12 +253,76 @@
             </div>
           </div>
         </li>
-
       </ul>
     </section>
+
+    <section class="additional-goods">
+      <!-- inner-title - такой же блок мы используем на старнице с формой -->
+      <h2 class="inner-title additional-goods__inner-title">
+        Дополнительные товары
+      </h2>
+      <dl class="additional-goods__items">
+        <div class="additional-goods__item">
+          <dt class="additional-goods__name">
+            Сахарозаменитель
+          </dt>
+          <dd class="additional-goods__packaging">
+            1 упаковка (100 г)
+          </dd>
+          <dd class="additional-goods__price">
+            200 р
+          </dd>
+          <a href="" class="btn additional-goods__btn">заказать</a>
+        </div>
+        <div class="additional-goods__item">
+          <dt class="additional-goods__name">
+            питьевая вода
+          </dt>
+          <dd class="additional-goods__packaging">
+            5 литров
+          </dd>
+          <dd class="additional-goods__price">
+            50 р
+          </dd>
+          <a href="" class="btn additional-goods__btn">заказать</a>
+        </div>
+        <div class="additional-goods__item">
+          <dt class="additional-goods__name">
+            молоко
+          </dt>
+          <dd class="additional-goods__packaging">
+            1 литр
+          </dd>
+          <dd class="additional-goods__price">
+            100 р
+          </dd>
+          <a href="" class="btn additional-goods__btn">заказать</a>
+        </div>
+        <div class="additional-goods__item">
+          <dt class="additional-goods__name">
+            витамины
+          </dt>
+          <dd class="additional-goods__packaging">
+            1 упаковка (30 г)
+          </dd>
+          <dd class="additional-goods__price">
+            300 р
+          </dd>
+          <a href="" class="btn additional-goods__btn">заказать</a>
+        </div>
+      </dl>
+    </section>
+    <!-- не знаю какой правильный тег нужен для этого блока или можно вообще в верхний секшн перенести -->
+    <div class="gift-block">
+      <img class="gift-block__img" alt="иконка подарка для клиента"></img>
+      <p class="gift-block__text">Закажите все
+        и получите чехол для
+        кота в подарок!</p>
+    </div>
   </main>
 
   <footer class="footer">
+    <!-- мне кажется что в футере класс header__logo тут лишний?? - он только для позиционирования текстового логотипа в хедере? поживем увидим -->
     <a href="index.html" class="footer__logo header__logo  logo-text">
       <img src="#" alt="текстовый логотип" />
     </a>
@@ -268,17 +330,17 @@
       <ul class="social__list">
         <li class="social__item">
           <a href="" class="social__link social__link--vk">
-            Vkontakte
+            <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
         <li class="social__item">
           <a href="" class="social__link social__link--inst">
-            instagram
+            <span class="visually-hidden">instagram</span>
           </a>
         </li>
         <li class="social__item">
           <a href="" class="social__link social__link--fb">
-            facebook
+            <span class="visually-hidden">facebook</span>
           </a>
         </li>
       </ul>

@@ -36,6 +36,86 @@
   </header>
 
   <main class="main">
+    <section class="nutrition-form">
+      <form class="nutrition-form__form" action="https://echo.htmlacademy.ru" method="POST">
+        <h1 class="nutrition-form__title">Подбор программы</h1>
+        <p class="nutrition-form__text">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+        <fieldset class="nutrition-form__cat-value">
+          <!-- поидее все лейблы стилизованы одинаково можно просто их навать одиноково nutrition-form__label, а потом если понадобится обращаться к опеределенному чтобы вставить иконку - добавим модификаторы, но я уже сделал все по своему... видимо буду исправлять)) -->
+          <!-- так же и со всеми input-ами, но без верстки сразу - не могу правильно сейчас решить и назвал все по своему, а общие стили бы задавал просто тегам-->
+          <!-- вcё что уже в input-ax написано  - надо делать через placeholder или value ???-->
+          <label class="nutrition-form__label-name" for="name-field">Имя:*
+            <input class="nutrition-form__input-name" type="text" name="cat_name" id="name-field" required
+              placeholder="Барсик">
+          </label>
+          <label class="nutrition-form__label-weight" for="weight-field">вес (кг):*
+            <input class="nutrition-form__input-weight" type="text" maxlength="3" name="cat_weight" id="weight-field"
+              required value="7">
+          </label>
+          <label class="nutrition-form__label-age" for="age-field">возраст (лет):
+            <input class="nutrition-form__input-age" type="text" maxlength="3" name="cat_age" id="age-field" value="7">
+          </label>
+        </fieldset>
+        <!-- выбор типа программы -->
+        <fieldset class="nutrition-form__program-purpose">
+          <input class="nutrition-form__input-loss-weight" type="radio" name="purpose" value="loss-weight"
+            id="loss-weight" checked>
+          <label class="nutrition-form__label-loss-weight" for="loss-weight">похудение</label>
+
+          <input class="nutrition-form__input-plus-weight" type="radio" name="purpose" value="plus-weight"
+            id="plus-weight">
+          <label class="nutrition-form__label-plus-weight" for="plus-weight">набор массы</label>
+
+          <input class="nutrition-form__input-plus-weight" type="radio" name="purpose" value="need-help-weight"
+            id="need-help-weight">
+          <label class="nutrition-form__label-need-help-weight" for="need-help-weight">Не знаю (Нужен ваш
+            совет)</label>
+        </fieldset>
+        <!-- контактные данные и комментарий-->
+        <fieldset class="nutrition-form__client-contacts">
+          <h2 class="inner-title">
+            Контактные данные (владельца кота)
+          </h2>
+          <label class="nutrition-form__label-email" for="email-field">e-mail:*
+            <input class="nutrition-form__input-email" type="email" name="client_email" id="email-field" required
+              placeholder="kuklachev@gmail.com">
+          </label>
+          <!-- не понял как сделать чтобы введёные цифры имели скобки и тире как на примере -->
+          <label class="nutrition-form__label-tel" for="tel-field">Телефон:*
+            <input class="nutrition-form__input-tel" type="tel" name="client_tel" id="tel-field" required
+              pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="8 (960) 900-60-90" maxlength="">
+          </label>
+
+          <h2 class="inner-title">
+            Комментарий
+          </h2>
+          <!-- здесь тоже тектс сразу написать между тегами или через placeholder?? не знаю как надо -->
+          <textarea class="nutrition-form__comment" name="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+          <h2 class="inner-title">
+            Дополнительно
+          </h2>
+          <input class="nutrition-form__input-checkbox" type="checkbox" id="sweetener" name="sweetener"
+            value="need_sweetener" checked>
+          <label class="nutrition-form__label-checkbox" for="sweetener">сахарозаменитель</label>
+
+          <input class="nutrition-form__input-checkbox" type="checkbox" id="water" name="water" value="need_water">
+          <label class="nutrition-form__label-checkbox" for="water">питьевая вода</label>
+
+          <input class="nutrition-form__input-checkbox" type="checkbox" id="milk" name="milk" value="need_milk">
+          <label class="nutrition-form__label-checkbox" for="milk">питьевая вода</label>
+
+          <input class="nutrition-form__input-checkbox" type="checkbox" id="vitamins" name="vitamins"
+            value="need_vitamins">
+          <label class="nutrition-form__label-checkbox" for="vitamins">витамины</label>
+        </fieldset>
+        <!-- общий класс нашего сайта btn и класс блока  nutrition-form -->
+        <button class="btn nutrition-form__btn" type="submit">отправить заявку</button>
+        <small class="nutrition-form__req-text">* — Обязательные поля</small>
+      </form>
+
+    </section>
 
     <!-- блок с адресом и картой -->
     <section class="contacts">
@@ -59,9 +139,7 @@
         </svg>
       </div>
     </section>
-
   </main>
-
 
   <footer class="footer">
     <div class="footer__container container">
@@ -71,17 +149,17 @@
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a href="" class="footer__social-link footer__social-link--vk">
-            Vkontakte
+            <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
         <li class="footer__social-item">
           <a href="" class="footer__social-link footer__social-link--inst">
-            instagram
+            <span class="visually-hidden">instagram</span>
           </a>
         </li>
         <li class="footer__social-item">
           <a href="" class="footer__social-link footer__social-link--fb">
-            facebook
+            <span class="visually-hidden">facebook</span>
           </a>
         </li>
       </ul>
