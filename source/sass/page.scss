@@ -1,0 +1,10 @@
+//стили для html class="page", body class="page__body
+.page,
+.page__body,
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Oswald", sans-serif;
+   font-weight: normal;
+}

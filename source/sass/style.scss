@@ -1,1 +1,35 @@
-// Начните писать стили здесь
+//подлючаем стили общих блоков
+@import "../sass/variables.scss";
+@import "../sass/fonts.scss";
+@import "../sass/page.scss";
+@import "../sass/main.scss";
+
+@import "../sass/header.scss";
+@import "../sass/footer.scss";
+@import "../sass/contacts.scss";
+
+@import "../sass/inner-title.scss";
+
+//стили блоков index.html
+@import "../sass/hero.scss";
+
+@import "../sass/nutrition-program.scss";
+@import "../sass/program-item.scss";
+
+@import "../sass/features.scss";
+@import "../sass/features-item.scss";
+@import "../sass/gift-block.scss";
+
+@import "../sass/weight-loss.scss";
+@import "../sass/weight-loss-photos.scss";
+@import "../sass/weight-loss-description.scss";
+
+//стили блоков form.html
+@import "../sass/nutrition-form.scss";
+
+//стили блоков catalog.html
+@import "../sass/catalog.scss";
+@import "../sass/catalog-item.scss";
+@import "../sass/catalog-more-products.scss";
+
+@import "../sass/additional-goods.scss";
