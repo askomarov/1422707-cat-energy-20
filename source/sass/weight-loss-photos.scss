@@ -1,0 +1,32 @@
+.weight-loss-photos {
+}
+.weight-loss-photos__photo--before {
+}
+.weight-loss-photos__photo--after {
+}
+.weight-loss-photos__separator {
+}
+.weight-loss-photos__bottom {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2px;
+}
+.weight-loss-photos__text {
+   cursor: pointer;
+   display: inline-block;
+   width: 70px;
+   height: 40px;
+   font-size: 16px;
+   line-height: 20px;
+   text-transform: uppercase;
+   color: $color_black;
+   border: none;
+   background: transparent;
+}
+.weight-loss-photos __line {
+   width: 84px;
+   height: 14px;
+   border-radius: 6px;
+   border: 1px solid $color_doveGray;
+}

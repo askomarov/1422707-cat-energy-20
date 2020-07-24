@@ -1,134 +1,33 @@
 .weight-loss {
    background: #eaeaea;
    padding: 27px 0 25px;
-   // .weight-loss__body
-
-   &__body {
-   }
-
-   // .weight-loss__title
-   &__title {
-      font-weight: normal;
-      font-size: 36px;
-      line-height: 40px;
-      color: $color_black;
-      margin-bottom: 33px;
-   }
-
-   // .weight-loss__text
-   &__text {
-      font-family: Arial;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 18px;
-      color: $color_tundora;
-      margin-bottom: 26px;
-   }
-
-   // .weight-loss__description
-   &__description {
-   }
-
-   // .weight-loss__summury-cost
-   &__summury-cost {
-      font-size: 14px;
-      line-height: 20px;
-      text-align: center;
-      margin-bottom: 42px;
-   }
-
-   // .weight-loss__photos
-
-   &__photos {
-      margin-bottom: 23px;
-   }
 }
-.weight-loss-description {
-   display: flex;
-   justify-content: space-between;
-   margin-bottom: 34px;
-   // .weight-loss-description__content
-   &__content {
-      flex: 0 1 124px;
-      height: 54px;
-      text-align: center;
-      border: 1px solid #cdcdcd;
-      border-radius: 3px;
-      position: relative;
-      z-index: 1;
-   }
-
-   // .weight-loss-description__num
-   &__num {
-      font-size: 24px;
-      line-height: 54px;
-      text-transform: uppercase;
-   }
-
-   // .weight-loss-description__text
-   &__text {
-      font-family: Arial;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 12px;
-      color: $color_tundora;
-      display: inline-block;
-      width: 67%;
-      position: absolute;
-      bottom: -17px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 2;
-      background: #eaeaea;
-   }
+.weight-loss__body {
 }
-.weight-loss-photos {
-   // .weight-loss-photos__photo--before
-
-   &__photo--before {
-   }
-
-   // .weight-loss-photos__photo--after
-
-   &__photo--after {
-   }
-
-   // .weight-loss-photos__separator
-
-   &__separator {
-   }
-
-   // .weight-loss-photos__bottom
-
-   &__bottom {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2px;
-   }
-
-   // .weight-loss-photos__text buttons
-   &__text {
-      cursor: pointer;
-      display: inline-block;
-      width: 70px;
-      height: 40px;
-      font-size: 16px;
-      line-height: 20px;
-      text-transform: uppercase;
-      color: $color_black;
-      border: none;
-      background: transparent;
-   }
-
-   // .weight-loss-photos__line
-
-   &__line {
-      width: 84px;
-      height: 14px;
-      border-radius: 6px;
-      border: 1px solid $color_doveGray;
-   }
+.weight-loss__title {
+   font-weight: normal;
+   font-size: 36px;
+   line-height: 40px;
+   color: $color_black;
+   margin-bottom: 33px;
+}
+.weight-loss__text {
+   font-family: Arial;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+   color: $color_tundora;
+   margin-bottom: 26px;
+}
+.weight-loss__description {
+}
+.weight-loss__summury-cost {
+   font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   margin-bottom: 42px;
+}
+.weight-loss__photos {
+   margin-bottom: 23px;
 }

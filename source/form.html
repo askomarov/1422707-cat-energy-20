@@ -11,7 +11,7 @@
 
   <header class="header">
     <div class="header__body">
-      <a class="header__logo">
+      <a href="index.html" class="header__logo">
         <img src="img/logo-mobile.svg" alt="логотип CatEnergy" />
       </a>
       <nav class="header-menu">
@@ -38,36 +38,35 @@
   <main class="main">
     <section class="nutrition-form">
       <form class="nutrition-form__form" action="https://echo.htmlacademy.ru" method="POST">
-          <h1 class="nutrition-form__title">Подбор программы</h1>
-          <p class="nutrition-form__text">Заполните анкету, и мы подберем <br>
-            программу питания для вашего кота</p>
-          <fieldset class="nutrition-form__cat-value">
-            <label class="nutrition-form__label" for="name-field">Имя:*
-              <input class="nutrition-form__input" type="text" name="cat_name" id="name-field" required
-                placeholder="Барсик">
-            </label>
-            <label class="nutrition-form__label" for="weight-field">вес (кг):*
-              <input class="nutrition-form__input" type="text" maxlength="3" name="cat_weight" id="weight-field"
-                required value="" placeholder="7">
-            </label>
-            <label class="nutrition-form__label" for="age-field">возраст (лет):
-              <input class="nutrition-form__input" type="text" maxlength="3" name="cat_age" id="age-field" value=""
-                placeholder="7">
-            </label>
-          </fieldset>
-          <!-- выбор типа программы -->
-          <fieldset class="nutrition-form__program-purpose">
-            <input class="nutrition-form__input-radio" type="radio" name="purpose" value="loss-weight"
-              id="loss-weight" checked>
-            <label class="nutrition-form__label" for="loss-weight">похудение</label>
-            <input class="nutrition-form__input-radio" type="radio" name="purpose" value="plus-weight"
-              id="plus-weight">
-            <label class="nutrition-form__label" for="plus-weight">набор массы</label>
-            <input class="nutrition-form__input-radio" type="radio" name="purpose" value="need-help-weight"
-              id="need-help-weight">
-            <label class="nutrition-form__label" for="need-help-weight">Не знаю (Нужен ваш
-              совет)</label>
-          </fieldset>
+        <h1 class="nutrition-form__title">Подбор программы</h1>
+        <p class="nutrition-form__text">Заполните анкету, и мы подберем <br>
+          программу питания для вашего кота</p>
+        <fieldset class="nutrition-form__cat-value">
+          <label class="nutrition-form__label" for="name-field">Имя:*
+            <input class="nutrition-form__input" type="text" name="cat_name" id="name-field" required
+              placeholder="Барсик">
+          </label>
+          <label class="nutrition-form__label" for="weight-field">вес (кг):*
+            <input class="nutrition-form__input" type="text" maxlength="3" name="cat_weight" id="weight-field" required
+              value="" placeholder="7">
+          </label>
+          <label class="nutrition-form__label" for="age-field">возраст (лет):
+            <input class="nutrition-form__input" type="text" maxlength="3" name="cat_age" id="age-field" value=""
+              placeholder="7">
+          </label>
+        </fieldset>
+        <!-- выбор типа программы -->
+        <fieldset class="nutrition-form__program-purpose">
+          <input class="nutrition-form__input-radio" type="radio" name="purpose" value="loss-weight" id="loss-weight"
+            checked>
+          <label class="nutrition-form__label" for="loss-weight">похудение</label>
+          <input class="nutrition-form__input-radio" type="radio" name="purpose" value="plus-weight" id="plus-weight">
+          <label class="nutrition-form__label" for="plus-weight">набор массы</label>
+          <input class="nutrition-form__input-radio" type="radio" name="purpose" value="need-help-weight"
+            id="need-help-weight">
+          <label class="nutrition-form__label" for="need-help-weight">Не знаю (Нужен ваш
+            совет)</label>
+        </fieldset>
         <!-- контактные данные и комментарий-->
         <fieldset class="nutrition-form__client-contacts">
           <h2 class="nutrition-form__inner-title inner-title">
