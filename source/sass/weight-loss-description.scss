@@ -1,0 +1,35 @@
+.weight-loss-description {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 34px;
+}
+.weight-loss-description__content {
+   flex: 0 1 124px;
+   height: 54px;
+   text-align: center;
+   border: 1px solid #cdcdcd;
+   border-radius: 3px;
+   position: relative;
+   z-index: 1;
+}
+.weight-loss-description__num {
+   font-size: 24px;
+   line-height: 54px;
+   text-transform: uppercase;
+}
+.weight-loss-description__text {
+   font-family: Arial;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 12px;
+   color: $color_tundora;
+   display: inline-block;
+   width: 67%;
+   position: absolute;
+   bottom: -17px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 2;
+   background: #eaeaea;
+}

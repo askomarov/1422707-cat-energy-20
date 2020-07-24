@@ -1,0 +1,65 @@
+.program-item {
+   list-style: none;
+   background: $color_concrete;
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.program-item__title {
+   font-size: 24px;
+   line-height: 50px;
+   text-transform: uppercase;
+   padding-left: 69px;
+   margin-bottom: 29px;
+   position: relative;
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $color_apple;
+      z-index: 1;
+   }
+}
+.program-item__title--lose-weight {
+   &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      z-index: 2;
+      background: url("../img/icon-cat-slim.svg") center no-repeat;
+   }
+}
+.program-item__title--mas-weight {
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -9.5px;
+      width: 67px;
+      height: 50px;
+      z-index: 2;
+      background: url("../img/icon-cat-pro.svg") center no-repeat;
+   }
+}
+.program-item__text {
+   margin-bottom: 23px;
+}
+.program-item__link {
+   padding-top: 15px;
+   border-top: 1px solid #d9d9d9;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 16px;
+   line-height: 16px;
+   color: $color_black;
+}
+.program-item__arrow {
+   margin-left: 15px;
+}
