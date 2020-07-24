@@ -1,94 +1,46 @@
 .footer {
-   background: #f2f2f2;
-   // .footer__container
-
-   &__container {
-      display: grid;
+   background: $color_concrete;
+}
+.footer__container {
+   display: grid;
+   height: 150px;
+   align-items: center;
+   grid-template-columns: repeat(3, 1fr);
+   @media (max-width: $md3+px) {
+   }
+   @media (max-width: $md4+px) {
+      height: auto;
       grid-template-columns: 1fr;
       grid-template-rows: 95px 63px 78px;
-      align-items: center;
    }
-
-   // .footer__logo
-
-   &__logo {
-      display: inline-block;
-      width: 128px;
-      height: 24px;
-      margin: 0 auto;
-   }
-
-   // .footer__social
-
-   &__social {
-      height: 100%;
-      display: flex;
-      align-items: center;
+}
+.footer__logo {
+   display: inline-block;
+   width: 128px;
+   height: 24px;
+   margin: 0 auto;
+}
+.footer__social {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   @media (max-width: $md4+px) {
       border-bottom: 1px solid #d9d9d9;
       border-top: 1px solid #d9d9d9;
    }
-
-   // .footer__copy
-
-   &__copy {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-   }
-
-   // .footer__text
-
-   &__text {
-      font-family: Arial;
-      color: $color_4;
-      font-size: 16px;
-      line-height: 18px;
-   }
-
-   // .footer__academy-logo
-
-   &__academy-logo {
-      width: 27px;
-      height: 34px;
-   }
 }
-.social {
-   // .social__list
-   &__list {
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 130px;
-      height: 22px;
-   }
-
-   // .social__item
-   &__item {
-      list-style: none;
-   }
-
-   // .social__link
-   &__link {
-      display: inline-block;
-      fill: $color_5;
-   }
-
-   // .social__link--vk
-
-   &__link--vk {
-      width: 23px;
-   }
-
-   // .social__link--inst
-
-   &__link--inst {
-      width: 16px;
-   }
-
-   // .social__link--fb
-
-   &__link--fb {
-      width: 22px;
-   }
+.footer__copy {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.footer__text {
+   font-family: Arial;
+   color: $color_tundora;
+   font-size: 16px;
+   line-height: 18px;
+}
+.footer__academy-logo {
+   width: 27px;
+   height: 34px;
 }

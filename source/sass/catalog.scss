@@ -1,15 +1,13 @@
 .catalog {
-   &__title {
-      font-weight: normal;
-      font-size: 36px;
-      line-height: 36px;
-      margin: 27px 0 41px;
-   }
-   // .catalog__list
-   &__list {
-   }
-
-   // .catalog__item
-   &__item {
-   }
+   margin-bottom: 28px;
+}
+.catalog__title {
+   font-weight: normal;
+   font-size: 36px;
+   line-height: 36px;
+   margin: 27px 0 41px;
+}
+.catalog__list {
+}
+.catalog__item {
 }

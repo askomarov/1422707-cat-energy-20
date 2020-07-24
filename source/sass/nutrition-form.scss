@@ -1,0 +1,93 @@
+.nutrition-form {
+   padding: 27px 0px 32px;
+}
+.nutrition-form__form {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+.nutrition-form__title {
+   font-size: 36px;
+   line-height: 36px;
+   color: $color_black;
+   margin-bottom: 37px;
+   flex: 0 1 100%;
+}
+.nutrition-form__text {
+   color: $color_black;
+   font-size: 14px;
+   line-height: 18px;
+   text-transform: uppercase;
+   margin-bottom: 39px;
+   flex: 0 1 100%;
+}
+.nutrition-form___cat-value {
+   margin-bottom: 24px;
+   border: none;
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+   flex: 0 1 568px;
+   @media (max-width: 767px) {
+      flex: 0 1 100%;
+   }
+}
+.nutrition-form__label {
+   font-size: 16px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.nutrition-form__input {
+   text-transform: uppercase;
+   color: $color_tundora;
+   height: 45px;
+}
+.nutrition-form__input-checkbox {
+}
+.nutrition-form__input-radio {
+}
+.nutrition-form__program-purpose {
+   border-color: #e7e7e7;
+   padding: 20px;
+   margin-bottom: 26px;
+   flex: 0 1 568px;
+   @media (max-width: 767px) {
+      flex: 0 1 100%;
+   }
+   @media (max-width: $md4+px) {
+      border-left: none;
+      border-right: none;
+   }
+}
+.nutrition-form__input-weight-purpose {
+}
+.nutrition-form__client-contacts {
+   border: none;
+   flex: 0 1 100%;
+
+   .inner-title:first-child {
+      margin-bottom: 32px;
+   }
+}
+.nutrition-form__inner-title {
+   margin-bottom: 34px;
+}
+
+.nutrition-form__comment {
+   resize: none;
+   height: 150px;
+   padding: 13px 15px;
+   @media (max-width: $md3+px) {
+      margin: 0 70px 65px;
+   }
+   @media (max-width: $md4+px) {
+      margin: 0 20px 27px;
+   }
+}
+
+.nutrition-form__btn {
+   width: 280px;
+   height: 40px;
+}
+.nutrition-form__req-text {
+}

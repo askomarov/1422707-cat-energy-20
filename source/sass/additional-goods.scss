@@ -1,0 +1,42 @@
+.additional-goods {
+}
+.additional-goods__inner-title {
+   margin-bottom: 35px;
+}
+
+.additional-goods__items {
+}
+
+.additional-goods__title {
+   flex: 0 1 100%;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 16px;
+   text-transform: uppercase;
+   color: #222222;
+}
+
+.additional-goods__item {
+   margin: 0 20px;
+   padding: 13px 0px 19px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 15px;
+   border: 1px solid #cdcdcd;
+   @media (max-width: $md4+px) {
+      border-left: none;
+      border-right: none;
+   }
+}
+
+.additional-goods__packaging {
+}
+
+.additional-goods__price {
+}
+
+.additional-goods__btn {
+   width: 100%;
+   height: 40px;
+}

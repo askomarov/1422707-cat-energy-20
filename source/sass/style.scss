@@ -1,35 +1,41 @@
 //подлючаем стили общих блоков
-@import "../sass/variables.scss";
-@import "../sass/fonts.scss";
-@import "../sass/page.scss";
-@import "../sass/main.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "page.scss";
+@import "ui.scss";
+@import "container.scss";
 
-@import "../sass/header.scss";
-@import "../sass/footer.scss";
-@import "../sass/contacts.scss";
+@import "header.scss";
+@import "header-menu.scss";
+@import "site-list.scss";
+@import "contacts.scss";
+@import "footer.scss";
+@import "social.scss";
 
-@import "../sass/inner-title.scss";
+@import "inner-title.scss";
 
 //стили блоков index.html
-@import "../sass/hero.scss";
+@import "hero.scss";
 
-@import "../sass/nutrition-program.scss";
-@import "../sass/program-item.scss";
+@import "nutrition-program.scss";
+@import "program-item.scss";
 
-@import "../sass/features.scss";
-@import "../sass/features-item.scss";
-@import "../sass/gift-block.scss";
+@import "features.scss";
+@import "features-item.scss";
+@import "gift-block.scss";
 
-@import "../sass/weight-loss.scss";
-@import "../sass/weight-loss-photos.scss";
-@import "../sass/weight-loss-description.scss";
+@import "weight-loss.scss";
+@import "weight-loss-photos.scss";
+@import "weight-loss-description.scss";
 
 //стили блоков form.html
-@import "../sass/nutrition-form.scss";
+@import "nutrition-form.scss";
+@import "nutrition-program.scss";
 
 //стили блоков catalog.html
-@import "../sass/catalog.scss";
-@import "../sass/catalog-item.scss";
-@import "../sass/catalog-more-products.scss";
+@import "catalog.scss";
+@import "catalog-item.scss";
+@import "catalog-more-products.scss";
 
-@import "../sass/additional-goods.scss";
+@import "additional-goods.scss";
+
