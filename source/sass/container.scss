@@ -1,14 +1,13 @@
-$mw: 1220;
-$md3: 767.98;
+$mw: 1440;
+$md3: 768.98;
 $md4: 375;
 .container {
    width: 100%;
    max-width: $mw + px;
    margin: 0 auto;
-   padding-left: 110px;
-   padding-right: 110px;
+   padding-left: 110px/1440px * 100vw;
+   padding-right: 110px/1440px * 100vw;
    @media (max-width: $md3+px) {
-      max-width: 708px;
       padding-left: 30px;
       padding-right: 30px;
    }

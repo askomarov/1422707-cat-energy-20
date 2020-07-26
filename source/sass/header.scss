@@ -1,6 +1,6 @@
 .header {
    min-height: 66px;
-   background: $color_white;
+   background: transparent;
 }
 .header__body {
    height: 100%;
@@ -8,7 +8,9 @@
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
-   border-bottom: 1px solid #d9d9d9;
+   @media (max-width: $md4+px) {
+      border-bottom: 1px solid #d9d9d9;
+   }
 }
 .header__logo {
    cursor: pointer;
@@ -17,5 +19,4 @@
    height: 66px;
    display: flex;
    align-items: center;
-   padding-left: 20px;
 }

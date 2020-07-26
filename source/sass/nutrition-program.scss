@@ -3,9 +3,20 @@
 .nutrition-program__body {
    margin: 0 20px;
    display: grid;
-   grid-template-columns: 1fr;
-   gap: 20px;
+   grid-template-columns: 1fr 1fr;
+   gap: 80px/1440px * 100vw;
+   @media (max-width: $md3+px) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+   }
+   @media (max-width: $md4+px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
 }
 .nutrition-program__item {
-   padding: 20px;
+   padding: 45px;
+   @media (max-width: $md4+px) {
+      padding: 20px;
+   }
 }

@@ -4,13 +4,27 @@
 .features__container {
 }
 .features__title {
-   font-size: 36px;
-   line-height: 40px;
-   margin-bottom: 38px;
+   font-size: 60px;
+   line-height: 60px;
+   margin-bottom: 72px;
+   @media (max-width: $md4+px) {
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 38px;
+   }
 }
 .features__items {
    display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: repeat(4, 60px);
-   gap: 20px;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 80px/1440px * 100vw;
+   @media (max-width: 830px) {
+      grid-template-columns: repeat(2, minmax(200px, 250px));
+      row-gap: 90px/830px * 100vw;
+      justify-content: space-between;
+   }
+   @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 60px);
+      gap: 20px;
+   }
 }

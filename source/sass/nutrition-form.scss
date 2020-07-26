@@ -1,5 +1,8 @@
 .nutrition-form {
-   padding: 27px 0px 32px;
+   padding: 0 0 82px;
+   @media (max-width: $md4+px) {
+      padding: 27px 0px 32px;
+   }
 }
 .nutrition-form__form {
    display: flex;
@@ -7,19 +10,27 @@
    align-items: center;
 }
 .nutrition-form__title {
-   font-size: 36px;
-   line-height: 36px;
    color: $color_black;
-   margin-bottom: 37px;
+   font-size: 60px;
+   line-height: 60px;
    flex: 0 1 100%;
+   @media (max-width: $md4+px) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 37px;
+   }
 }
 .nutrition-form__text {
    color: $color_black;
-   font-size: 14px;
-   line-height: 18px;
    text-transform: uppercase;
-   margin-bottom: 39px;
    flex: 0 1 100%;
+   font-size: 20px;
+   line-height: 30px;
+   @media (max-width: $md4+px) {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 39px;
+   }
 }
 .nutrition-form___cat-value {
    margin-bottom: 24px;
@@ -41,13 +52,17 @@
    text-transform: uppercase;
    color: $color_tundora;
    height: 45px;
+   border: 1px solid $color_mercury;
+}
+.nutrition-form__checkboxs-body {
+   display: flex;
 }
 .nutrition-form__input-checkbox {
 }
 .nutrition-form__input-radio {
 }
 .nutrition-form__program-purpose {
-   border-color: #e7e7e7;
+   border: 1px solid $color_mercury;
    padding: 20px;
    margin-bottom: 26px;
    flex: 0 1 568px;
@@ -64,30 +79,54 @@
 .nutrition-form__client-contacts {
    border: none;
    flex: 0 1 100%;
-
-   .inner-title:first-child {
-      margin-bottom: 32px;
-   }
 }
 .nutrition-form__inner-title {
-   margin-bottom: 34px;
+   margin-bottom: 76px;
+   &:last-child {
+      margin-bottom: 54px;
+   }
+   @media (max-width: $md4+px) {
+      margin-bottom: 34px;
+   }
 }
-
 .nutrition-form__comment {
+   text-transform: uppercase;
+   color: $color_tundora;
+   font-size: 20px;
+   line-height: 30px;
+   width: 100%;
    resize: none;
    height: 150px;
-   padding: 13px 15px;
+   padding: 10px 19px;
+   border: 1px solid $color_mercury;
+   margin: 0 110px 67px;
    @media (max-width: $md3+px) {
       margin: 0 70px 65px;
    }
    @media (max-width: $md4+px) {
+      padding: 13px 15px;
       margin: 0 20px 27px;
+      font-size: 16px;
+      line-height: 18px;
    }
 }
-
 .nutrition-form__btn {
    width: 280px;
-   height: 40px;
+   height: 52px;
+   @media (max-width: $md4+px) {
+      height: 40px;
+   }
 }
 .nutrition-form__req-text {
+   font-family: Arial;
+   font-size: 16px;
+   line-height: 16px;
+   color: $color_black;
+   display: none;
+   @media (max-width: $md3+px) {
+      display: inline-block;
+   }
+   @media (max-width: $md4+px) {
+      font-size: 14px;
+   }
 }
