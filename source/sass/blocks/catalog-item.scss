@@ -1,4 +1,5 @@
 .catalog-item {
+   font-family: "Oswald", "Arial", sans-serif;
    list-style: none;
    display: grid;
    grid-template: 112px min-content / 50% 50%;
@@ -6,6 +7,7 @@
    padding: 19px 20px 25px;
    border-top: 1px solid #ebebeb;
 }
+
 .catalog-item__img {
    // я делаю адаптивные карнитнки таким методом... тут идет обращение к тегу, не к классу, можно заморочиться и проставить классы. а как делают по другому?
    position: relative;
@@ -18,8 +20,7 @@
       object-fit: contain;
    }
 }
-.catalog-item__text-content {
-}
+
 .catalog-item__title {
    font-weight: normal;
    font-size: 16px;
@@ -28,8 +29,7 @@
    width: 53%;
    margin-bottom: 18px;
 }
-.catalog-item__list {
-}
+
 .catalog-item__item {
    display: flex;
    align-items: center;
@@ -43,12 +43,15 @@
       margin-bottom: 0;
    }
 }
+
 .catalog-item__name {
    font-family: Arial;
 }
+
 .catalog-item__value {
    font-family: Arial;
 }
+
 .catalog-item__btn {
    grid-column: 1/-1;
    height: 40px;

@@ -1,18 +1,20 @@
 .features {
+   font-family: "Oswald", "Arial", sans-serif;
    padding: 27px 0px 42px 0px;
 }
-.features__container {
-}
+
 .features__title {
    font-size: 60px;
    line-height: 60px;
+   font-weight: normal;
    margin-bottom: 72px;
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       font-size: 36px;
       line-height: 40px;
       margin-bottom: 38px;
    }
 }
+
 .features__items {
    display: grid;
    grid-template-columns: repeat(4, 1fr);

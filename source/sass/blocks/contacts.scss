@@ -1,23 +1,27 @@
 .contacts {
+   box-sizing: border-box;
+   font-family: "Oswald", "Arial", sans-serif;
    position: relative;
    background: $color_concrete;
    width: 100%;
    height: 400px;
    background-image: url("../img/bg-map-desktop@1x.png");
-   @media (max-width: $md3+px) {
-      margin-top: 200px+76px;
+   @media (max-width: $width-tablet+px) {
+      margin-top: 200px;
       background-image: url("../img/bg-map-tablet@1x.png");
       display: flex;
       align-items: center;
       justify-content: center;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       height: 362px;
-      margin-top: 114px+35px;
+      margin-top: 114px;
       background-image: url("../img/bg-map-mobile@1x.png");
    }
 }
+
 .contacts__body {
+   box-sizing: border-box;
    position: absolute;
    top: 95px;
    left: 110px;
@@ -27,48 +31,53 @@
    background: $color_white;
    width: 570px;
    height: 201px;
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
       height: 200px;
       top: -200px;
       left: 0;
       width: 100%;
       background: #f2f2f2;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       height: 114px;
       padding: 28px 19px 22px;
       top: -114px;
    }
 }
+
 .contacts__title {
+   font-weight: normal;
    text-transform: uppercase;
    font-size: 20px;
    line-height: 24px;
    flex: 0 1 50%;
    margin-right: 87px;
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
       margin: 0;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       font-size: 16px;
       line-height: 20px;
    }
 }
+
 .contacts__text {
+   margin: 0;
    font-family: Arial;
    font-size: 16px;
    line-height: 20px;
    color: $color_tundora;
    flex: 0 1 50%;
 
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
       text-align: right;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       font-size: 14px;
       text-align-last: left;
    }
 }
+
 .contacts__img {
    width: 113px;
    height: 106px;
@@ -84,12 +93,12 @@
       object-fit: cover;
       z-index: 0;
    }
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
       position: relative;
       top: auto;
       right: auto;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       width: 56px;
       height: 52px;
    }

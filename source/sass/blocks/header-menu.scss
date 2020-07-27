@@ -1,26 +1,14 @@
 .header-menu {
    display: flex;
    align-items: center;
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       flex: 1 1 100%;
    }
-   // @media (min-width: $md3+px) {
-   //    &:after {
-   //       content: "";
-   //       display: block;
-   //       width: 720px;
-   //       height: 696px;
-   //       position: absolute;
-   //       z-index: -1;
-   //       top: 0;
-   //       right: 0;
-   //       background: url("../img/index-background-desktop@1x.jpg") top right no-repeat;
-   //    }
-   // }
 }
+
 .header-menu__toggle {
    display: none;
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       display: inline-block;
       position: absolute;
       top: 25px;
@@ -34,9 +22,8 @@
       background: url("../img/icon-mobile-menu.svg") center no-repeat;
    }
 }
+
 .header-menu__wrapper {
    // display: none;
    width: 100%;
-}
-.header-menu__list {
 }

@@ -1,17 +1,20 @@
 .header {
+   font-family: "Oswald", "Arial", sans-serif;
    min-height: 66px;
    background: transparent;
 }
+
 .header__body {
    height: 100%;
    display: flex;
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       border-bottom: 1px solid #d9d9d9;
    }
 }
+
 .header__logo {
    cursor: pointer;
    display: inline-block;

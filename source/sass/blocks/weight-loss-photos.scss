@@ -1,17 +1,11 @@
-.weight-loss-photos {
-}
-.weight-loss-photos__photo--before {
-}
-.weight-loss-photos__photo--after {
-}
-.weight-loss-photos__separator {
-}
 .weight-loss-photos__bottom {
+   font-family: "Oswald", "Arial", sans-serif;
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 2px;
 }
+
 .weight-loss-photos__text {
    cursor: pointer;
    display: inline-block;
@@ -24,7 +18,8 @@
    border: none;
    background: transparent;
 }
-.weight-loss-photos __line {
+
+.weight-loss-photos__line {
    width: 84px;
    height: 14px;
    border-radius: 6px;

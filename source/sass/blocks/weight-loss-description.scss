@@ -1,9 +1,12 @@
 .weight-loss-description {
+   font-family: "Oswald", "Arial", sans-serif;
    display: flex;
    justify-content: space-between;
    margin-bottom: 34px;
 }
+
 .weight-loss-description__content {
+   box-sizing: border-box;
    flex: 0 1 124px;
    height: 54px;
    text-align: center;
@@ -12,16 +15,24 @@
    position: relative;
    z-index: 1;
 }
+
 .weight-loss-description__num {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
    font-size: 30px;
    line-height: 37px;
    text-transform: uppercase;
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       font-size: 24px;
       line-height: 54px;
    }
 }
+
 .weight-loss-description__text {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
    font-family: Arial;
    font-style: normal;
    font-weight: normal;

@@ -1,11 +1,12 @@
 .hero {
+   font-family: "Oswald", "Arial", sans-serif;
    margin-bottom: 82px;
    height: 630px;
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
       margin-bottom: 0;
       height: auto;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       background-size: 320px 305px;
       background-image: url("../img/index-background-mobile@1x.jpg");
       background-position: top center;
@@ -13,20 +14,21 @@
       background-size: contain;
    }
 }
+
 .hero__content {
    display: grid;
    grid-template-columns: 414px 1fr;
    grid-template-rows: repeat(3, auto);
    align-items: center;
    padding: 0 80px/1440px * 100vw;
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
       padding-top: 62px;
       background-image: none;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -35,27 +37,29 @@
       text-align: center;
    }
 }
+
 .hero__title {
    font-weight: normal;
    font-size: 60px;
    line-height: 60px;
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
       margin-bottom: 41px;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       color: $color_white;
       font-size: 36px;
       line-height: 36px;
       margin-bottom: 25px;
    }
 }
+
 .hero__text {
    font-size: 20px;
    line-height: 20px;
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
       margin-bottom: 49px;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       color: $color_white;
       margin-bottom: 29px;
       font-weight: normal;
@@ -63,6 +67,7 @@
       line-height: 14px;
    }
 }
+
 .hero__img {
    position: relative;
    top: 0;
@@ -70,30 +75,30 @@
    height: 449px;
    grid-column: -1/-2;
    grid-row: 1/-1;
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
       margin-top: -83px;
       left: 0;
       z-index: 0;
       height: 609px;
       width: 100%;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       margin-top: 0;
       margin-bottom: 3px;
       top: 0;
       height: auto;
    }
 }
+
 .hero__btn {
    font-size: 20px;
-
    width: 280px;
    height: 54px;
    position: relative;
    z-index: 1;
-   @media (max-width: $md3+px) {
+   @media (max-width: $width-tablet+px) {
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       font-size: 14px;
       order: 1;
       height: 40px;
