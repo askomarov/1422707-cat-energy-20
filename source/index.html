@@ -11,7 +11,7 @@
 <body class="page__body">
 
   <header class="header">
-    <div class="header__body">
+    <div class="header__body container">
       <a class="header__logo">
         <img src="img/logo-mobile.svg" alt="логотип CatEnergy" />
       </a>
@@ -21,8 +21,8 @@
         </button>
         <div class="header-menu__wrapper">
           <ul class="header-menu__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">главная</a>
+            <li class="site-list__item site-list__item">
+              <a class="site-list__link site-list__link--active">главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">каталог продукции</a>
@@ -38,20 +38,18 @@
 
 
   <main class="main">
-
-    <div class="hero">
+    <div class="hero container">
       <div class="hero__content">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
+        <a href="#" class="btn hero__btn">подобрать программу</a>
         <div class="hero__img">
           <img src="img/index-can-mobile@1x.png" alt="фитнес корм для кошек CatEnergy ">
         </div>
-        <a href="#" class="btn hero__btn">подобрать программу</a>
       </div>
     </div>
     </section>
-
-    <section class="nutrition-program">
+    <section class="nutrition-program container">
       <h2 class="visually-hidden">Выбор программы питания для котов и кошек</h2>
       <ul class="nutrition-program__body">
         <li class="nutrition-program__item program-item">
@@ -80,7 +78,6 @@
         </li>
       </ul>
     </section>
-
     <section class="features">
       <h2 class="visually-hidden">Преимущества, как работает функциональное питание</h2>
       <div class="features__container container">
@@ -101,7 +98,6 @@
         </ul>
       </div>
     </section>
-
     <section class="weight-loss">
       <div class="weight-loss__body container">
         <h2 class="weight-loss__title">Живой пример</h2>
@@ -137,24 +133,20 @@
         <button type="button" class="weight-loss-photos__text">стало</button>
       </div>
     </section>
-
     <!-- блок с адресом и картой -->
     <section class="contacts">
-      <div class="contacts__container">
-        <div class="contacts__body">
-          <h2 class="contacts__title"><span class="contacts__title-main-word">приглашаем</span><br>
-            к сотрудничеству дилеров!</h2>
-          <p class="contacts__text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
-        </div>
+      <div class="contacts__body">
+        <h2 class="contacts__title">приглашаем <br>
+          к сотрудничеству <br> дилеров!</h2>
+        <p class="contacts__text">
+          ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург
+        </p>
       </div>
       <div class="contacts__img">
-        <img src="img/bg-map-mobile@1x.png" alt="" />
+        <img src="img/map-pin.png" alt="отметка на карте местоположения CatEnergy" />
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <div class="footer__container container">
       <a href="index.html" class="footer__logo logo-text">
@@ -240,7 +232,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>

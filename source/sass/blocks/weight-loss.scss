@@ -1,0 +1,46 @@
+.weight-loss {
+   font-family: "Oswald", "Arial", sans-serif;
+   background: #eaeaea;
+   padding: 27px 0 25px;
+}
+
+.weight-loss__title {
+   font-weight: normal;
+   color: $color_black;
+   font-size: 60px;
+   line-height: 60px;
+   @media (max-width: $width-mobile+px) {
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 33px;
+   }
+}
+
+.weight-loss__text {
+   font-family: Arial;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   color: $color_tundora;
+   @media (max-width: $width-mobile+px) {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 26px;
+   }
+}
+
+.weight-loss__summury-cost {
+   font-size: 20px;
+   line-height: 20px;
+   @media (max-width: $width-mobile+px) {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 42px;
+   }
+}
+.weight-loss__photos {
+   @media (max-width: $width-mobile+px) {
+      margin-bottom: 23px;
+   }
+}

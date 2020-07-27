@@ -1,18 +1,18 @@
-$mw: 1220;
-$md3: 767.98;
-$md4: 375;
+$max-width: 1440;
+$width-tablet: 768.98;
+$width-mobile: 375.98;
 .container {
+   box-sizing: border-box;
    width: 100%;
-   max-width: $mw + px;
+   max-width: $max-width + px;
    margin: 0 auto;
-   padding-left: 110px;
-   padding-right: 110px;
-   @media (max-width: $md3+px) {
-      max-width: 708px;
+   padding-left: 110px/1440px * 100vw;
+   padding-right: 110px/1440px * 100vw;
+   @media (max-width: $width-tablet+px) {
       padding-left: 30px;
       padding-right: 30px;
    }
-   @media (max-width: $md4+px) {
+   @media (max-width: $width-mobile+px) {
       min-width: 320px;
       padding-left: 20px;
       padding-right: 20px;

@@ -1,0 +1,29 @@
+.header-menu {
+   display: flex;
+   align-items: center;
+   @media (max-width: $width-mobile+px) {
+      flex: 1 1 100%;
+   }
+}
+
+.header-menu__toggle {
+   display: none;
+   @media (max-width: $width-mobile+px) {
+      display: inline-block;
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      cursor: pointer;
+      padding: 0;
+      outline: none;
+      border: none;
+      width: 24px;
+      height: 18px;
+      background: url("../img/icon-mobile-menu.svg") center no-repeat;
+   }
+}
+
+.header-menu__wrapper {
+   // display: none;
+   width: 100%;
+}

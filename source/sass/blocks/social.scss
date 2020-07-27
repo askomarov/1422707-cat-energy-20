@@ -1,4 +1,5 @@
 .social__list {
+   font-family: "Oswald", "Arial", sans-serif;
    margin: 0 auto;
    display: flex;
    align-items: center;
@@ -6,19 +7,24 @@
    width: 130px;
    height: 22px;
 }
+
 .social__item {
    list-style: none;
 }
+
 .social__link {
    display: inline-block;
    fill: $color_doveGray;
 }
+
 .social__link--vk {
    width: 23px;
 }
+
 .social__link--inst {
    width: 16px;
 }
+
 .social__link--fb {
    width: 22px;
 }

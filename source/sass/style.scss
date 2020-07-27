@@ -5,37 +5,36 @@
 @import "ui.scss";
 @import "container.scss";
 
-@import "header.scss";
-@import "header-menu.scss";
-@import "site-list.scss";
-@import "contacts.scss";
-@import "footer.scss";
-@import "social.scss";
+@import "blocks/header.scss";
+@import "blocks/header-menu.scss";
+@import "blocks/site-list.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
 
-@import "inner-title.scss";
+@import "blocks/inner-title.scss";
 
 //стили блоков index.html
-@import "hero.scss";
+@import "blocks/hero.scss";
 
-@import "nutrition-program.scss";
-@import "program-item.scss";
+@import "blocks/nutrition-program.scss";
+@import "blocks/program-item.scss";
 
-@import "features.scss";
-@import "features-item.scss";
-@import "gift-block.scss";
+@import "blocks/features.scss";
+@import "blocks/features-item.scss";
+@import "blocks/gift-block.scss";
 
-@import "weight-loss.scss";
-@import "weight-loss-photos.scss";
-@import "weight-loss-description.scss";
+@import "blocks/weight-loss.scss";
+@import "blocks/weight-loss-photos.scss";
+@import "blocks/weight-loss-description.scss";
 
 //стили блоков form.html
-@import "nutrition-form.scss";
-@import "nutrition-program.scss";
+@import "blocks/nutrition-form.scss";
+@import "blocks/nutrition-program.scss";
 
 //стили блоков catalog.html
-@import "catalog.scss";
-@import "catalog-item.scss";
-@import "catalog-more-products.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/catalog-more-products.scss";
 
-@import "additional-goods.scss";
-
+@import "blocks/additional-goods.scss";
