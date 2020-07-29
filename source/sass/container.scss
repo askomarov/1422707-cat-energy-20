@@ -1,4 +1,4 @@
-$max-width: 1440;
+$max-width: 1300;
 $width-tablet: 768.98;
 $width-mobile: 375.98;
 .container {
@@ -6,8 +6,8 @@ $width-mobile: 375.98;
    width: 100%;
    max-width: $max-width + px;
    margin: 0 auto;
-   padding-left: 110px/1440px * 100vw;
-   padding-right: 110px/1440px * 100vw;
+   padding-left: 40px;
+   padding-right: 40px;
    @media (max-width: $width-tablet+px) {
       padding-left: 30px;
       padding-right: 30px;

@@ -1,4 +1,6 @@
 .nutrition-form {
+   // почему, например прописав для всего блока Hero - ffOswald - там шрифт к кнопке применился,
+   // а в этом блоке надо и в кнопке прописать Oswald  - чтоюы он применился?
    font-family: "Oswald", "Arial", sans-serif;
    padding: 0 0 82px;
    @media (max-width: $width-mobile+px) {
@@ -38,7 +40,9 @@
    }
 }
 
-.nutrition-form___cat-value {
+.nutrition-form__cat-value {
+   margin: 0;
+   padding: 0;
    margin-bottom: 24px;
    border: none;
    display: flex;
@@ -57,10 +61,17 @@
 }
 
 .nutrition-form__input {
+   padding-left: 15px;
+   font-family: "Oswald", "Arial", sans-serif;
    text-transform: uppercase;
    color: $color_tundora;
    height: 45px;
    border: 1px solid $color_mercury;
+}
+
+.nutrition-form__input-radio {
+   margin: 0;
+   padding: 0;
 }
 
 .nutrition-form__checkboxs-body {
@@ -68,6 +79,7 @@
 }
 
 .nutrition-form__program-purpose {
+   margin: 0;
    border: 1px solid $color_mercury;
    padding: 20px;
    margin-bottom: 26px;
@@ -82,6 +94,8 @@
 }
 
 .nutrition-form__client-contacts {
+   margin: 0;
+   padding: 0;
    border: none;
    flex: 0 1 100%;
 }
@@ -97,6 +111,7 @@
 }
 
 .nutrition-form__comment {
+   font-family: "Oswald", "Arial", sans-serif;
    text-transform: uppercase;
    color: $color_tundora;
    font-size: 20px;
@@ -119,8 +134,10 @@
 }
 
 .nutrition-form__btn {
+   font-family: "Oswald", "Arial", sans-serif;
    width: 280px;
    height: 52px;
+   font-size: 20px;
    @media (max-width: $width-mobile+px) {
       height: 40px;
    }

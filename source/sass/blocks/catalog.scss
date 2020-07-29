@@ -14,7 +14,7 @@
    font-size: 60px;
    line-height: 60px;
    font-weight: normal;
-   margin-bottom: 84px/1440px * 100vw;
+   margin-bottom: 164px;
    @media (max-width: $width-mobile+px) {
       font-size: 36px;
       line-height: 36px;
@@ -23,15 +23,17 @@
 }
 
 .catalog__list {
+   margin: 0;
+   padding: 0; 
    display: grid;
    justify-content: center;
    column-gap: 80px/1440px * 100vw;
-   row-gap: 63px;
+   row-gap: 143px;
    grid-template-columns: repeat(auto-fit, 245px);
    @media (max-width: $width-tablet+px) {
       grid-template-columns: repeat(auto-fit, minmax(300px, 324px));
       column-gap: 60px/1440px * 100vw;
-      row-gap: 59px;
+      row-gap: 140px;
    }
    @media (max-width: $width-mobile+px) {
       gap: 0;
