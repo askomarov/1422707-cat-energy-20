@@ -1,4 +1,6 @@
 .site-list {
+   margin: 0;
+   padding: 0;
    font-family: "Oswald", "Arial", sans-serif;
    display: flex;
    gap: 32px;
@@ -88,4 +90,7 @@
    left: 0;
    right: 0;
    background: $color_apple;
+   @media (max-width: $width-mobile+px) {
+      display: none;
+   }
 }

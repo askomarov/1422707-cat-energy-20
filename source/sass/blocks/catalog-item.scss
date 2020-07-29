@@ -1,16 +1,49 @@
 .catalog-item {
+   position: relative;
+   z-index: 1;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
    font-family: "Oswald", "Arial", sans-serif;
    list-style: none;
-   display: grid;
-   grid-template: 112px min-content / 50% 50%;
-   row-gap: 13px;
-   padding: 19px 20px 25px;
-   border-top: 1px solid #ebebeb;
+   display: flex;
+   flex-direction: column;
+   row-gap: 34px;
+   background: #f2f2f2;
+   padding: 1px 38px 40px 39px;
+   @media (max-width: $width-tablet+px) {
+      padding: 8px 37px 40px 39px;
+   }
+   @media (max-width: $width-mobile+px) {
+      background: $color_white;
+      display: grid;
+      grid-template: 112px min-content / 50% 50%;
+      row-gap: 13px;
+      padding: 19px 0px 25px;
+      border-top: 1px solid #ebebeb;
+   }
+   // &:after {
+   //    content: "";
+   //    background: #f2f2f2;
+   //    z-index: -1;
+   //    position: absolute;
+   //    width: 100%;
+   //    height: 430px;
+   //    bottom: 0;
+   //    left: 0;
+   //    @media (max-width: $width-mobile+px) {
+   //       display: none;
+   //    }
+   // }
 }
 
 .catalog-item__img {
    // я делаю адаптивные карнитнки таким методом... тут идет обращение к тегу, не к классу, можно заморочиться и проставить классы. а как делают по другому?
    position: relative;
+   width: 172px;
+   height: 196px;
+   align-self: center;
+   margin-top: -80px;
    & > img {
       position: absolute;
       width: 100%;
@@ -19,15 +52,44 @@
       left: 0;
       object-fit: contain;
    }
+   @media (max-width: $width-tablet+px) {
+      margin-top: -73px;
+      width: 168px;
+      height: 200px;
+   }
+   @media (max-width: $width-mobile+px) {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+   }
 }
-
+.catalog-item__text-content {
+   flex: 1 1 auto;
+}
 .catalog-item__title {
-   font-weight: normal;
-   font-size: 16px;
-   line-height: 20px;
+   margin: 0;
+   padding: 0;
    text-transform: uppercase;
-   width: 53%;
-   margin-bottom: 18px;
+   text-align: center;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 21px;
+   width: 158px;
+   margin: 0 auto 21px;
+   br {
+      display: none;
+   }
+   @media (max-width: $width-mobile+px) {
+      margin: 0;
+      width: auto;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 18px;
+      text-align: left;
+      br {
+         display: block;
+      }
+   }
 }
 
 .catalog-item__item {
@@ -35,12 +97,19 @@
    align-items: center;
    justify-content: space-between;
    font-weight: normal;
-   font-size: 12px;
+   font-size: 16px;
    line-height: 16px;
    color: $color_tundora;
    margin-bottom: 2px;
+   height: 32px;
+   border-bottom: 1px solid #cdcdcd;
    &:last-child {
       margin-bottom: 0;
+   }
+   @media (max-width: $width-mobile+px) {
+      font-size: 12px;
+      height: auto;
+      border: none;
    }
 }
 

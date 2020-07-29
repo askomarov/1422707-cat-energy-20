@@ -3,7 +3,11 @@
    list-style: none;
    position: relative;
    padding-top: 111px;
+   @media (max-width: 830px) {
+      width: 249px;
+   }
    @media (max-width: 480px) {
+      width: auto;
       padding-left: 80px;
       padding-top: 0;
    }
@@ -35,6 +39,7 @@
 }
 
 .features-item__text {
+   margin: 0;
    font-family: Arial;
    font-size: 16px;
    line-height: 24px;
