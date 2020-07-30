@@ -5,21 +5,43 @@
 }
 
 .header__body {
+   box-sizing: border-box;
+   margin: 54px 110px 0;
    height: 100%;
    display: flex;
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
+   @media (max-width: 1440px) {
+      margin: 54px 110px/1440px * 100vw 0;
+   }
+   @media (max-width: $width-tablet+px) {
+      margin: 25px 30px 0;
+   }
    @media (max-width: $width-mobile+px) {
       border-bottom: 1px solid #d9d9d9;
+      margin: 11px 0 0;
    }
 }
 
 .header__logo {
    cursor: pointer;
    display: inline-block;
-   width: 191px;
-   height: 66px;
    display: flex;
    align-items: center;
+   img {
+      width: 202px;
+      height: 59.5px;
+      @media (max-width: $width-tablet+px) {
+         width: 174px;
+         height: 51.68px;
+      }
+      @media (max-width: $width-mobile+px) {
+         // width: 33.32px;
+         height: 37.61px;
+      }
+   }
+   @media (max-width: $width-mobile+px) {
+      margin-bottom: 17px;
+   }
 }

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +13,11 @@
   <header class="header">
     <div class="header__body">
       <a href="index.html" class="header__logo">
-        <img src="img/logo-mobile.svg" alt="логотип CatEnergy" />
+        <picture>
+          <source srcset="img/logo-tablet.svg" media="(max-width:768px)">
+          <source srcset="img/logo-mobile.svg" media="(max-width:375px)">
+          <img src="img/logo-desktop.svg" alt="логотип CatEnergy" />
+        </picture>
       </a>
       <nav class="header-menu">
         <button type="button" class="header-menu__toggle">
@@ -42,36 +47,36 @@
         <p class="nutrition-form__text">Заполните анкету, и мы подберем <br>
           программу питания для вашего кота</p>
         <fieldset class="nutrition-form__cat-value">
-          <label class="nutrition-form__label" for="name-field">Имя:*
-            <input class="nutrition-form__input" type="text" name="cat_name" id="name-field" required
-              placeholder="Барсик">
+          <label class="nutrition-form__label nutrition-form__label--flex" for="name-field">Имя:*
+            <input class="nutrition-form__input nutrition-form__input--flex" type="text" name="cat_name" id="name-field"
+              required placeholder="Барсик">
           </label>
-          <label class="nutrition-form__label" for="weight-field">вес (кг):*
-            <input class="nutrition-form__input" type="text" maxlength="3" name="cat_weight" id="weight-field" required
-              value="" placeholder="7">
+          <label class="nutrition-form__label nutrition-form__label--flex" for="weight-field">вес (кг):*
+            <input class="nutrition-form__input nutrition-form__input--flex" type="text" maxlength="3" name="cat_weight"
+              id="weight-field" required value="" placeholder="7">
           </label>
-          <label class="nutrition-form__label" for="age-field">возраст (лет):
-            <input class="nutrition-form__input" type="text" maxlength="3" name="cat_age" id="age-field" value=""
-              placeholder="7">
+          <label class="nutrition-form__label nutrition-form__label--flex" for="age-field">возраст (лет):
+            <input class="nutrition-form__input nutrition-form__input--flex" type="text" maxlength="3" name="cat_age"
+              id="age-field" value="" placeholder="7">
           </label>
         </fieldset>
         <!-- выбор типа программы -->
         <fieldset class="nutrition-form__program-purpose">
           <input class="nutrition-form__input-radio" type="radio" name="purpose" value="loss-weight" id="loss-weight"
             checked>
-          <label class="nutrition-form__label" for="loss-weight">похудение</label>
+          <label class="nutrition-form__label nutrition-form__label--radio" for="loss-weight">похудение</label>
           <input class="nutrition-form__input-radio" type="radio" name="purpose" value="plus-weight" id="plus-weight">
-          <label class="nutrition-form__label" for="plus-weight">набор массы</label>
+          <label class="nutrition-form__label nutrition-form__label--radio" for="plus-weight">набор массы</label>
           <input class="nutrition-form__input-radio" type="radio" name="purpose" value="need-help-weight"
             id="need-help-weight">
-          <label class="nutrition-form__label" for="need-help-weight">Не знаю (Нужен ваш
+          <label class="nutrition-form__label nutrition-form__label--radio" for="need-help-weight">Не знаю (Нужен ваш
             совет)</label>
         </fieldset>
         <!-- контактные данные и комментарий-->
+        <h2 class="nutrition-form__inner-title inner-title">
+          Контактные данные (владельца кота)
+        </h2>
         <fieldset class="nutrition-form__client-contacts">
-          <h2 class="nutrition-form__inner-title inner-title">
-            Контактные данные (владельца кота)
-          </h2>
           <label class="nutrition-form__label" for="email-field">e-mail:*
             <input class="nutrition-form__input" type="email" name="client_email" id="email-field" required
               placeholder="kuklachev@gmail.com">
@@ -80,26 +85,26 @@
             <input class="nutrition-form__input" type="tel" name="client_tel" id="tel-field" required
               pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="8 (960) 900-60-90" maxlength="">
           </label>
-          <h2 class="nutrition-form__inner-title inner-title">
-            Комментарий
-          </h2>
-          <textarea class="nutrition-form__comment" name="comment"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-          <h2 class="nutrition-form__inner-title inner-title">
-            Дополнительно
-          </h2>
-          <div class="nutrition-form__checkboxs-body">
-            <input class="nutrition-form__input-checkbox" type="checkbox" id="sweetener" name="sweetener"
-              value="need_sweetener" checked>
-            <label class="nutrition-form__label" for="sweetener">сахарозаменитель</label>
-            <input class="nutrition-form__input-checkbox" type="checkbox" id="water" name="water" value="need_water">
-            <label class="nutrition-form__label" for="water">питьевая вода</label>
-            <input class="nutrition-form__input-checkbox" type="checkbox" id="milk" name="milk" value="need_milk">
-            <label class="nutrition-form__label" for="milk">питьевая вода</label>
-            <input class="nutrition-form__input-checkbox" type="checkbox" id="vitamins" name="vitamins"
-              value="need_vitamins">
-            <label class="nutrition-form__label" for="vitamins">витамины</label>
-          </div>
+        </fieldset>
+        <h2 class="nutrition-form__inner-title inner-title">
+          Комментарий
+        </h2>
+        <textarea class="nutrition-form__comment" name="comment"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+        <h2 class="nutrition-form__inner-title inner-title">
+          Дополнительно
+        </h2>
+        <fieldset class="nutrition-form__checkboxs-body">
+          <input class="nutrition-form__input-checkbox" type="checkbox" id="sweetener" name="sweetener"
+            value="need_sweetener" checked>
+          <label class="nutrition-form__label nutrition-form__label--checkbox" for="sweetener">сахарозаменитель</label>
+          <input class="nutrition-form__input-checkbox" type="checkbox" id="water" name="water" value="need_water">
+          <label class="nutrition-form__label nutrition-form__label--checkbox" for="water">питьевая вода</label>
+          <input class="nutrition-form__input-checkbox" type="checkbox" id="milk" name="milk" value="need_milk">
+          <label class="nutrition-form__label nutrition-form__label--checkbox" for="milk">питьевая вода</label>
+          <input class="nutrition-form__input-checkbox" type="checkbox" id="vitamins" name="vitamins"
+            value="need_vitamins">
+          <label class="nutrition-form__label nutrition-form__label--checkbox" for="vitamins">витамины</label>
         </fieldset>
         <!-- общий класс нашего сайта btn и класс блока  nutrition-form -->
         <button class="btn nutrition-form__btn" type="submit">отправить заявку</button>

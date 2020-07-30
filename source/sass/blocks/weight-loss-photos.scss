@@ -6,17 +6,24 @@
    gap: 2px;
 }
 
-.weight-loss-photos__text {
+.weight-loss-photos__btn {
    cursor: pointer;
+   text-transform: uppercase;
+   padding: 0;
    display: inline-block;
+   font-family: "Oswald";
+   text-transform: uppercase;
+   font-size: 20px;
+   line-height: 30px;
    width: 70px;
    height: 40px;
-   font-size: 16px;
-   line-height: 20px;
-   text-transform: uppercase;
    color: $color_black;
    border: none;
    background: transparent;
+   @media (max-width: $width-mobile+px) {
+      font-size: 16px;
+      line-height: 20px;
+   }
 }
 
 .weight-loss-photos__line {
@@ -24,15 +31,4 @@
    height: 14px;
    border-radius: 6px;
    border: 1px solid $color_doveGray;
-}
-.weight-loss-photos__text {
-   font-family: "Oswald";
-   text-transform: uppercase;
-   font-size: 20px;
-   line-height: 30px;
-   padding: 0;
-   @media (max-width: $width-mobile+px) {
-      font-size: 16px;
-      line-height: 20px;
-   }
 }
