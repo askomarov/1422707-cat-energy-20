@@ -4,8 +4,20 @@
    color: $color_black;
    font-size: 36px;
    line-height: 36px;
+   position: relative;
    @media (max-width: $width-mobile+px) {
       font-size: 24px;
       line-height: 26px;
    }
+   // &:after {
+   //    position: absolute;
+   //    z-index: 1;
+   //    top: 50%;
+   //    left: -70px;
+   //    content: "";
+   //    display: block;
+   //    width: 70px;
+   //    height: 2px;
+   //    background: $color_apple;
+   // }
 }

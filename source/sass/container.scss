@@ -5,16 +5,22 @@ $width-mobile: 375.98;
    box-sizing: border-box;
    width: 100%;
    max-width: $max-width + px;
-   margin: 0 auto;
    padding-left: 40px;
    padding-right: 40px;
+   margin: 0 auto;
    @media (max-width: $width-tablet+px) {
       padding-left: 30px;
       padding-right: 30px;
+      width: auto;
    }
    @media (max-width: $width-mobile+px) {
       min-width: 320px;
       padding-left: 20px;
       padding-right: 20px;
    }
+}
+.container-fluid {
+   width: 100%;
+   max-width: 1440px;
+   margin: 0 auto;
 }
