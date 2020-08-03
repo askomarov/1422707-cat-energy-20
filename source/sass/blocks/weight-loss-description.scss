@@ -54,4 +54,10 @@
    transform: translateX(-50%);
    z-index: 2;
    background: #eaeaea;
+   @media (max-width: $width-tablet+px) {
+      background: #fff;
+   }
+   @media (max-width: $width-mobile+px) {
+      background: #eaeaea;
+   }
 }

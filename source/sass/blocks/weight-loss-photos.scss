@@ -9,14 +9,14 @@
 .weight-loss-photos__btn {
    cursor: pointer;
    text-transform: uppercase;
-   padding: 0;
+   padding: 0px;
    display: inline-block;
    font-family: "Oswald";
    text-transform: uppercase;
    font-size: 20px;
    line-height: 30px;
-   width: 70px;
-   height: 40px;
+   width: auto;
+   height: 32px;
    color: $color_black;
    border: none;
    background: transparent;
@@ -27,8 +27,17 @@
 }
 
 .weight-loss-photos__line {
-   width: 84px;
-   height: 14px;
+   margin: 0px 11px 0px 20px;
+   width: 428px;
+   height: 6px;
    border-radius: 6px;
-   border: 1px solid $color_doveGray;
+   background: #dcdcdc;
+   @media (max-width: $width-tablet+px) {
+      margin: 0px 11px 0px 14px;
+   }
+   @media (max-width: $width-mobile+px) {
+      width: 84px;
+      height: 14px;
+      border: 1px solid $color_doveGray;
+   }
 }

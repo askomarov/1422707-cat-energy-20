@@ -1,12 +1,19 @@
 .features {
    font-family: "Oswald", "Arial", sans-serif;
-   padding: 27px 0px 42px 0px;
+   padding: 71px 0px 11px 0px;
+   @media (max-width: $width-tablet+px) {
+      padding: 45px 0px 47px 0px;
+   }
+   @media (max-width: $width-mobile+px) {
+      padding: 27px 0px 42px 0px;
+   }
 }
 
 .features__title {
    font-size: 60px;
    line-height: 60px;
    font-weight: normal;
+   margin: 0;
    margin-bottom: 72px;
    @media (max-width: $width-mobile+px) {
       font-size: 36px;

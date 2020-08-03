@@ -18,4 +18,12 @@
    color: $color_white;
    text-transform: uppercase;
    font-size: 16px;
+   @media (min-width: $width-mobile+px) {
+      &:hover {
+         background: #5eaa2f;
+      }
+   }
+   &:active {
+      color: rgba(255, 255, 255, 0.3);
+   }
 }
