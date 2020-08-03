@@ -2,7 +2,14 @@
    font-family: "Oswald", "Arial", sans-serif;
    display: flex;
    justify-content: space-between;
-   margin-bottom: 34px;
+   margin-bottom: 60px;
+   @media (min-width: $width-mobile+px) and (max-width: $width-tablet+px) {
+      flex: 0 1 50%;
+      margin-bottom: 59px;
+   }
+   @media (max-width: $width-mobile+px) {
+      margin-bottom: 34px;
+   }
 }
 
 .weight-loss-description__content {
