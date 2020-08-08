@@ -8,6 +8,9 @@
    height: 150px;
    align-items: center;
    grid-template-columns: repeat(3, 1fr);
+   @media (max-width: $width-tablet+px) {
+      height: 144px;
+   }
    @media (max-width: $width-mobile+px) {
       height: auto;
       grid-template-columns: 1fr;
@@ -16,10 +19,13 @@
 }
 
 .footer__logo {
+   box-sizing: border-box;
    display: inline-block;
    width: 128px;
    height: 24px;
-   margin: 0 auto;
+   @media (max-width: $width-mobile+px) {
+      margin: 38px auto 32px;
+   }
 }
 
 .footer__social {
@@ -35,12 +41,17 @@
 .footer__copy {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: flex-end;
+   @media (max-width: $width-mobile+px) {
+      justify-content: space-between;
+   }
 }
 
 .footer__text {
    font-family: Arial;
    color: $color_tundora;
+   margin: 0;
+   margin-right: 24px;
    font-size: 16px;
    line-height: 18px;
 }

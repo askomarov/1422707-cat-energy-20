@@ -1,26 +1,39 @@
 .weight-loss-description {
    font-family: "Oswald", "Arial", sans-serif;
    display: flex;
-   justify-content: space-between;
-   margin-bottom: 60px;
-   @media (min-width: $width-mobile+px) and (max-width: $width-tablet+px) {
+   margin-bottom: 59px;
+   gap: 42px;
+   @media (min-width: 610px) and (max-width: $width-tablet+px) {
       flex: 0 1 50%;
-      margin-bottom: 59px;
+      margin-bottom: 0;
    }
-   @media (max-width: $width-mobile+px) {
-      margin-bottom: 34px;
+   @media (max-width: 610px) {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 29px;
+      gap: 31px;
    }
 }
 
 .weight-loss-description__content {
    box-sizing: border-box;
-   flex: 0 1 124px;
    height: 54px;
    text-align: center;
    border: 1px solid #cdcdcd;
    border-radius: 3px;
    position: relative;
    z-index: 1;
+   flex: 0 0 162px;
+   height: 72px;
+   padding-top: 13px;
+   @media (max-width: $width-tablet+px) {
+      padding-top: 14px;
+   }
+   @media (max-width: $width-mobile+px) {
+      height: 56px;
+      padding: 0;
+      flex: 0 1 124px;
+   }
 }
 
 .weight-loss-description__num {
@@ -32,7 +45,7 @@
    text-transform: uppercase;
    @media (max-width: $width-mobile+px) {
       font-size: 24px;
-      line-height: 54px;
+      line-height: 51px;
    }
 }
 
@@ -43,21 +56,31 @@
    font-family: Arial;
    font-style: normal;
    font-weight: normal;
-   font-size: 12px;
-   line-height: 12px;
+   font-size: 14px;
+   line-height: 14px;
    color: $color_tundora;
    display: inline-block;
-   width: 67%;
    position: absolute;
-   bottom: -17px;
    left: 50%;
+   bottom: -5px;
    transform: translateX(-50%);
    z-index: 2;
    background: #eaeaea;
    @media (max-width: $width-tablet+px) {
+      bottom: -6px;
       background: #fff;
+   }
+   &--first {
+      width: 114px;
+   }
+   &--second {
+      width: 142px;
    }
    @media (max-width: $width-mobile+px) {
       background: #eaeaea;
+      font-size: 12px;
+      line-height: 12px;
+      width: 82px;
+      bottom: -15px;
    }
 }
