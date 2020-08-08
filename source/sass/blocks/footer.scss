@@ -4,6 +4,7 @@
 }
 
 .footer__container {
+   box-sizing: border-box;
    display: grid;
    height: 150px;
    align-items: center;
@@ -29,6 +30,7 @@
 }
 
 .footer__social {
+   box-sizing: border-box;
    height: 100%;
    display: flex;
    align-items: center;

@@ -25,8 +25,11 @@
          height: 305px;
          background: url("../../img/index-background-mobile@1x.jpg");
       }
+      @media (min-width: $width-desktop+px) {
+         width: 50vw;
+      }
    }
-   &--catalog::after {
+   &--nobg::after {
       display: none;
    }
 }
