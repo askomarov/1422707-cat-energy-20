@@ -1,6 +1,10 @@
 .header-menu {
    display: flex;
    align-items: center;
+   flex: 0 1 480px;
+   @media (max-width: $width-tablet+px) {
+      flex: 0 1 440px;
+   }
    @media (max-width: $width-mobile+px) {
       flex: 1 1 100%;
    }

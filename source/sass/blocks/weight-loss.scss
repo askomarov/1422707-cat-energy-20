@@ -1,21 +1,28 @@
 .weight-loss {
+   box-sizing: border-box;
    font-family: "Oswald", "Arial", sans-serif;
    display: flex;
    flex-wrap: wrap;
+   padding-bottom: 68px;
+   @media (max-width: $width-tablet+px) {
+      border-top: 1px solid #e6e6e6;
+      padding-top: 42px;
+      padding-bottom: 68px;
+   }
    @media (max-width: $width-mobile+px) {
-      padding: 27px 20px 25px;
+      padding: 26px 20px 31px;
       background: #eaeaea;
    }
 }
 
 .weight-loss__title {
-   margin: 0;
-   margin-bottom: 146px;
+   margin: 72px 0 148px;
    font-weight: normal;
    color: $color_black;
    font-size: 60px;
    line-height: 60px;
    @media (max-width: $width-tablet+px) {
+      margin-top: 0px;
       margin-bottom: 63px;
    }
    @media (max-width: $width-mobile+px) {
@@ -27,17 +34,21 @@
 
 .weight-loss__text {
    margin: 0;
-   margin-bottom: 69px;
+   margin-bottom: 68px;
    font-family: Arial;
    font-style: normal;
    font-weight: normal;
    font-size: 16px;
    line-height: 24px;
    color: $color_tundora;
+   display: inline-block;
+   width: 436px;
    @media (max-width: $width-tablet+px) {
+      width: 97%;
       margin-bottom: 54px;
    }
    @media (max-width: $width-mobile+px) {
+      width: 99%;
       font-size: 14px;
       line-height: 18px;
       margin-bottom: 26px;
@@ -49,23 +60,33 @@
    font-size: 20px;
    line-height: 20px;
    text-transform: uppercase;
-   br{
+   br {
       display: none;
    }
-   @media (min-width: $width-mobile+px) and (max-width: $width-tablet+px) {
+   @media (min-width: 610px) and (max-width: $width-tablet+px) {
       flex: 1 1 auto;
       text-align: right;
-      align-self: center;
+      // align-self: center;
+      margin-top: 9px;
       height: 79px;
       line-height: 25px;
-      br{
+      br {
          display: inline-block;
       }
    }
-   @media (max-width: $width-mobile+px) {
+   @media (max-width: 610px) {
       font-size: 14px;
       text-align: center;
-      margin-bottom: 42px;
+      margin-bottom: 37px;
+   }
+}
+.weight-loss__summury-cost-nums {
+   @media (max-width: $width-tablet+px) {
+      display: inline-block;
+      margin-top: 4px;
+   }
+   @media (min-width: $width-tablet+px) {
+      margin-left: 63px;
    }
 }
 
@@ -74,6 +95,7 @@
    @media (min-width: $width-mobile+px) and (max-width: $width-tablet+px) {
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 69px;
    }
    @media (max-width: $width-tablet+px) {
       flex: 1 1 100%;
@@ -82,13 +104,10 @@
 
 .weight-loss__photos {
    flex: 0 1 50%;
+   width: 100%;
    @media (max-width: $width-tablet+px) {
       flex: 1 1 100%;
    }
-   @media (max-width: $width-mobile+px) {
-      margin-bottom: 23px;
-   }
-   // временно пока нет стилей для фото, ломают верстку
    img {
       width: 100%;
    }

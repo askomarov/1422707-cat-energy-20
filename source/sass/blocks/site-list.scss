@@ -3,7 +3,7 @@
    padding: 0;
    font-family: "Oswald", "Arial", sans-serif;
    display: flex;
-   gap: 32px;
+   justify-content: space-between;
    @media (max-width: $width-mobile+px) {
       flex-direction: column;
       gap: 0;
@@ -17,14 +17,18 @@
 .site-list__link {
    position: relative;
    font-weight: normal;
-   font-size: 18px;
-   line-height: 24px;
+   font-size: 20px;
+   line-height: 30px;
    display: flex;
    justify-content: center;
    align-items: center;
    text-decoration: none;
    text-transform: uppercase;
    color: $color_white;
+   @media (max-width: $width-tablet+px) {
+      font-size: 18px;
+      line-height: 24px;
+   }
    @media (min-width: 375px) {
       &:hover {
          color: rgba(255, 255, 255, 0.6);
@@ -61,6 +65,8 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 20px;
+      box-sizing: border-box;
+      height: 66px;
       padding: 22px 0 24px;
       border-top: 1px solid #e6e6e6;
    }
@@ -71,12 +77,15 @@
          height: 2px;
          width: 100%;
          position: absolute;
-         bottom: -8px;
+         bottom: -10px;
          left: 0;
          right: 0;
          background: $color_apple;
          @media (min-width: $width-tablet+px) {
             background: $color_white;
+         }
+         @media (min-width: $width-desktop+px) {
+            bottom: -8px;
          }
       }
    }

@@ -1,4 +1,6 @@
 .features-item {
+   box-sizing: border-box;
+   width: 100%;
    font-family: "Oswald", "Arial", sans-serif;
    list-style: none;
    position: relative;
@@ -6,10 +8,10 @@
    @media (max-width: 830px) {
       width: 249px;
    }
-   @media (max-width: 480px) {
+   @media (max-width: 510px) {
       width: auto;
       padding-left: 80px;
-      padding-top: 0;
+      padding-top: 2px;
    }
    &::after {
       background-color: $color_apple;
@@ -21,7 +23,7 @@
       top: 0;
       left: 0;
       z-index: 2;
-      @media (max-width: 480px) {
+      @media (max-width: 510px) {
          width: 60px;
          height: 60px;
       }
@@ -37,7 +39,7 @@
       font-size: 280px;
       line-height: 280px;
       color: #f2f2f2;
-      @media (max-width: 480px) {
+      @media (max-width: 510px) {
          content: "";
       }
    }
@@ -57,9 +59,27 @@
       font-size: 14px;
       line-height: 18px;
    }
+   @media (max-width: 510px) {
+      br {
+         display: none;
+      }
+   }
 }
 
 .features-item--useful {
+   @media (min-width: $width-desktop+px) {
+      &::before {
+         right: 15px;
+      }
+   }
+   @media (max-width: $width-tablet+px) {
+      &::before {
+         right: 20px;
+      }
+   }
+   @media (max-width: $width-tablet+px) and (min-width: $width-desktop+px) {
+      width: 230px;
+   }
    &::after {
       background-image: url("../img/advantage-leaf@1x.png");
       background-position: center;
@@ -68,10 +88,20 @@
 }
 
 .features-item--easy {
+   @media (max-width: $width-tablet+px) and (min-width: $width-desktop+px) {
+      width: 246px;
+      margin-left: 8px;
+   }
    &::after {
       background-image: url("../img/advantage-powder@1x.png");
       background-position: center;
       background-repeat: no-repeat;
+   }
+   @media (max-width: $width-tablet+px) {
+      margin-left: 9px;
+   }
+   @media (max-width: 510px) {
+      margin-left: 0;
    }
 }
 
@@ -81,12 +111,31 @@
       background-position: center;
       background-repeat: no-repeat;
    }
+   @media (min-width: $width-desktop+px) {
+      &::before {
+         right: -2px;
+      }
+   }
 }
 
 .features-item--result {
+   @media (max-width: $width-tablet+px) and (min-width: $width-desktop+px) {
+      margin-left: 8px;
+   }
    &::after {
       background-image: url("../img/advantage-clock@1x.png");
       background-position: center;
       background-repeat: no-repeat;
+   }
+   @media (min-width: $width-desktop+px) {
+      &::before {
+         right: -4px;
+      }
+   }
+   @media (max-width: $width-tablet+px) {
+      margin-left: 9px;
+   }
+   @media (max-width: 510px) {
+      margin-left: 0;
    }
 }

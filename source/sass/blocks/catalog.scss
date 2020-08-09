@@ -2,10 +2,10 @@
    font-family: "Oswald", "Arial", sans-serif;
    margin-bottom: 76px;
    @media (max-width: $width-tablet+px) {
-      margin-bottom: 68px;
+      margin-bottom: 66px;
    }
    @media (max-width: $width-mobile+px) {
-      margin-bottom: 28px;
+      margin-bottom: 25px;
    }
 }
 
@@ -14,11 +14,16 @@
    font-size: 60px;
    line-height: 60px;
    font-weight: normal;
-   margin-bottom: 164px;
+   margin-top: 74px;
+   margin-bottom: 166px;
+   @media (max-width: $width-tablet+px) {
+      margin-top: 0;
+      margin-bottom: 165px;
+   }
    @media (max-width: $width-mobile+px) {
       font-size: 36px;
       line-height: 36px;
-      margin: 27px 0 41px;
+      margin: 27px 0 39px;
    }
 }
 
@@ -34,9 +39,10 @@
       column-gap: 80px/1440px * 100vw;
    }
    @media (max-width: $width-tablet+px) {
+      justify-content: space-between;
       grid-template-columns: repeat(auto-fit, minmax(300px, 324px));
       column-gap: 60px/1440px * 100vw;
-      row-gap: 140px;
+      row-gap: 141px;
    }
    @media (max-width: $width-mobile+px) {
       gap: 0;

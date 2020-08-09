@@ -6,7 +6,10 @@
    align-items: center;
    justify-content: space-between;
    width: 130px;
-   height: 22px;
+   height: 33px;
+   @media (max-width: $width-mobile+px) {
+      height: 22px;
+   }
 }
 
 .social__item {
