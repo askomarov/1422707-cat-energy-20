@@ -24,10 +24,19 @@
       width: 24px;
       height: 18px;
       background: url("../img/icon-mobile-menu.svg") center no-repeat;
+      &--cross {
+         background: url("../img/icon-close.svg") center no-repeat;
+      }
    }
 }
 
 .header-menu__wrapper {
-   // display: none;
+   display: none;
    width: 100%;
+   &--shown {
+      display: block;
+   }
+   &--no-js{
+      display: block;
+   }
 }
