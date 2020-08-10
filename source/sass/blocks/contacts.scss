@@ -5,28 +5,28 @@
    background: $color_concrete;
    width: 100%;
    height: 400px;
-   background-image: url("../../img/bg-map-desktop@1x.png");
+   background-image: url("../img/bg-map-desktop@1x.png");
    background-repeat: no-repeat;
    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bg-map-desktop@2x.png");
+      background-image: url("../img/bg-map-desktop@2x.png");
    }
    @media (max-width: $width-tablet+px) {
       margin-top: 200px;
-      background-image: url("../../img/bg-map-tablet@1x.png");
+      background-image: url("../img/bg-map-tablet@1x.png");
       display: flex;
       align-items: center;
       justify-content: center;
       @media (min-resolution: 2dppx) {
-         background-image: url("../../img/bg-map-tablet@2x.png");
+         background-image: url("../img/bg-map-tablet@2x.png");
       }
    }
    @media (max-width: $width-mobile+px) {
       height: 362px;
       margin-top: 114px;
-      background-image: url("../../img/bg-map-mobile@1x.png");
+      background-image: url("../img/bg-map-mobile@1x.png");
       background-size: cover;
       @media (min-resolution: 2dppx) {
-         background-image: url("../../img/bg-map-mobile@2x.png");
+         background-image: url("../img/bg-map-mobile@2x.png");
       }
    }
 }
