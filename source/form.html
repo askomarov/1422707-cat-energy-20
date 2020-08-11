@@ -14,8 +14,8 @@
     <div class="header__body container">
       <a href="index.html" class="header__logo">
         <picture>
-          <source srcset="img/logo-tablet.svg" media="(max-width:768px)">
           <source srcset="img/logo-mobile.svg" media="(max-width:375px)">
+          <source srcset="img/logo-tablet.svg" media="(max-width:768px)">
           <img src="img/logo-desktop.svg" alt="логотип CatEnergy" />
         </picture>
       </a>
@@ -23,7 +23,7 @@
         <button type="button" class="header-menu__toggle">
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
-        <div class="header-menu__wrapper">
+        <div class="header-menu__wrapper header-menu__wrapper--no-js">
           <ul class="header-menu__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--black" href="index.html">главная</a>
@@ -112,8 +112,8 @@
             <label class="nutrition-form__label nutrition-form__label--checkbox" for="vitamins">витамины</label>
           </div>
           <!-- общий класс нашего сайта btn и класс блока  nutrition-form -->
-          <button class="btn nutrition-form__btn" type="submit">отправить заявку</button><div
-            class="nutrition-form__req-text">* — Обязательные поля</div>
+          <button class="btn nutrition-form__btn" type="submit">отправить заявку</button>
+          <div class="nutrition-form__req-text">* — Обязательные поля</div>
         </div>
       </form>
     </section>

@@ -14,8 +14,8 @@
     <div class="header__body container">
       <a href="index.html" class="header__logo">
         <picture>
-          <source srcset="img/logo-tablet.svg" media="(max-width:768px)">
           <source srcset="img/logo-mobile.svg" media="(max-width:375px)">
+          <source srcset="img/logo-tablet.svg" media="(max-width:768px)">
           <img src="img/logo-desktop.svg" alt="логотип CatEnergy" />
         </picture>
       </a>
@@ -23,7 +23,7 @@
         <button type="button" class="header-menu__toggle">
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
-        <div class="header-menu__wrapper">
+        <div class="header-menu__wrapper header-menu__wrapper--no-js">
           <ul class="header-menu__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--black" href="index.html">главная</a>
@@ -48,9 +48,12 @@
         <li class="catalog__item catalog-item">
           <div class="catalog-item__img">
             <picture>
-              <source srcset="img/chicken-small-tablet@1x.png" media="(max-width:768px)">
-              <source srcset="img/chicken-small-mobile@1x.jpg" media="(max-width:375px)">
-              <img src="img/chicken-small-desktop@1x.png" alt="CatEnergy 500г со вкусом курицы" />
+              <source srcset="img/chicken-small-mobile@1x.jpg 1x, img/chicken-small-mobile@2x.jpg 2x"
+                media="(max-width:375px)">
+              <source srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x"
+                media="(max-width:768px)">
+              <img src="img/chicken-small-desktop@1x.png" srcset="img/chicken-small-tablet@2x.png 2x"
+                alt="CatEnergy 500г со вкусом курицы" />
             </picture>
           </div>
           <div class="catalog-item__text-content">
@@ -75,9 +78,12 @@
         <li class="catalog__item catalog-item">
           <div class="catalog-item__img catalog-item__img--big">
             <picture>
-              <source srcset="img/chicken-big-tablet@1x.png" media="(max-width:768px)">
-              <source srcset="img/chicken-big-mobile@1x.jpg" media="(max-width:375px)">
-              <img src="img/chicken-big-desktop@1x.png" alt="CatEnergy 1000г со вкусом курицы" />
+              <source srcset="img/chicken-big-mobile@1x.jpg 1x, img/chicken-big-mobile@2x.jpg 2x"
+                media="(max-width:375px)">
+              <source srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x"
+                media="(max-width:768px)">
+              <img src="img/chicken-big-desktop@1x.png" srcset="img/chicken-big-desktop@2x.png 2x"
+                alt="CatEnergy 1000г со вкусом курицы" />
             </picture>
           </div>
           <div class="catalog-item__text-content">
@@ -102,9 +108,12 @@
         <li class="catalog__item catalog-item">
           <div class="catalog-item__img">
             <picture>
-              <source srcset="img/fish-small-tablet@1x.png" media="(max-width:768px)">
-              <source srcset="img/fish-small-mobile@1x.jpg" media="(max-width:375px)">
-              <img src="img/fish-small-desktop@1x.png" alt="CatEnergy 500г со вкусом рыбы" />
+              <source srcset="img/fish-small-mobile@1x.jpg 1x, img/fish-small-mobile@2x.jpg 2x"
+                media="(max-width:375px)">
+              <source srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x"
+                media="(max-width:768px)">
+              <img src="img/fish-small-desktop@1x.png" srcset="img/fish-small-desktop@2x.png 2x"
+                alt="CatEnergy 500г со вкусом рыбы" />
             </picture>
           </div>
           <div class="catalog-item__text-content">
@@ -129,9 +138,10 @@
         <li class="catalog__item catalog-item">
           <div class="catalog-item__img catalog-item__img--big">
             <picture>
-              <source srcset="img/fish-big-tablet@1x.png" media="(max-width:768px)">
-              <source srcset="img/fish-big-mobile@1x.jpg" media="(max-width:375px)">
-              <img src="img/fish-big-desktop@1x.png" alt="CatEnergy 1000г со вкусом рыбы" />
+              <source srcset="img/fish-big-mobile@1x.jpg 1x, img/fish-big-mobile@2x.jpg 2x" media="(max-width:375px)">
+              <source srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x" media="(max-width:768px)">
+              <img src="img/fish-big-desktop@1x.png" srcset="img/fish-big-desktop@2x.png"
+                alt="CatEnergy 1000г со вкусом рыбы" />
             </picture>
           </div>
           <div class="catalog-item__text-content">
@@ -156,9 +166,12 @@
         <li class="catalog__item catalog-item">
           <div class="catalog-item__img">
             <picture>
-              <source srcset="img/buckwheat-small-tablet@1x.png" media="(max-width:768px)">
-              <source srcset="img/buckwheat-small-mobile@1x.jpg" media="(max-width:375px)">
-              <img src="img/buckwheat-small-desktop@1x.png" alt="CatEnergy 500г с гречой" />
+              <source srcset="img/buckwheat-small-mobile@1x.jpg 1x, img/buckwheat-small-mobile@2x.jpg 2x "
+                media="(max-width:375px)">
+              <source srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x "
+                media="(max-width:768px)">
+              <img src="img/buckwheat-small-desktop@1x.png" srcset="img/buckwheat-small-desktop@2x.png 2x"
+                alt="CatEnergy 500г с гречой" />
             </picture>
           </div>
           <div class="catalog-item__text-content">
@@ -183,9 +196,12 @@
         <li class="catalog__item catalog-item">
           <div class="catalog-item__img catalog-item__img--big">
             <picture>
-              <source srcset="img/buckwheat-big-tablet@1x.png" media="(max-width:768px)">
-              <source srcset="img/buckwheat-big-mobile@1x.jpg" media="(max-width:375px)">
-              <img src="img/buckwheat-big-desktop@1x.png" alt="CatEnergy 1000г с гречкой" />
+              <source srcset="img/buckwheat-big-mobile@1x.jpg 1x, img/buckwheat-big-mobile@2x.jpg 2x"
+                media="(max-width:375px)">
+              <source srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x"
+                media="(max-width:768px)">
+              <img src="img/buckwheat-big-desktop@1x.png" srcset="img/buckwheat-big-desktop@2x.png 2x"
+                alt="CatEnergy 1000г с гречкой" />
             </picture>
           </div>
           <div class="catalog-item__text-content">
@@ -210,9 +226,12 @@
         <li class="catalog__item catalog-item">
           <div class="catalog-item__img">
             <picture>
-              <source srcset="img/rice-small-tablet@1x.png" media="(max-width:768px)">
-              <source srcset="img/rice-small-mobile@1x.jpg" media="(max-width:375px)">
-              <img src="img/rice-small-desktop@1x.png" alt="CatEnergy 500г с рисом" />
+              <source srcset="img/rice-small-mobile@1x.jpg 1x, img/rice-small-mobile@2x.jpg 2x"
+                media="(max-width:375px)">
+              <source srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x"
+                media="(max-width:768px)">
+              <img src="img/rice-small-desktop@1x.png" srcset="img/rice-small-desktop@2x.png 2x"
+                alt="CatEnergy 500г с рисом" />
             </picture>
           </div>
           <div class="catalog-item__text-content">
