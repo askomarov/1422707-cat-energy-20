@@ -31,12 +31,14 @@
 }
 
 .header-menu__wrapper {
-   display: none;
    width: 100%;
-   &--shown {
-      display: block;
-   }
-   &--no-js{
-      display: block;
+   @media (max-width:$width-mobile+px){
+      display: none;
+      &--shown {
+         display: block;
+      }
+      &--no-js{
+         display: block;
+      }
    }
 }

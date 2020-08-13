@@ -77,6 +77,10 @@
       }
    }
 }
+.catalog-item__item-link{
+   text-decoration: none;
+   color: inherit;
+}
 .catalog-item__text-content {
    flex: 1 1 auto;
 }
