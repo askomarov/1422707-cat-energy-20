@@ -5,7 +5,30 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const webp = require('gulp-webp');
+const imagemin = require('gulp-imagemin');
 
+//images
+const images = () => {
+  return gulp.src('source/img/*.{jpg,png}')
+    .pipe(
+      webp({
+        quality: 70
+      })
+    )
+    .pipe(gulp.dest('source/img'))
+    .pipe(gulp.src('source/img/*.{jpg,png}'))
+    .pipe(
+      imagemin({
+        progressive: true,
+        svgoPlugins: [{ removeViewBox: false }],
+        interlaced: true,
+        optimizationLevel: 3 // 0 to 7
+      })
+    )
+    .pipe(gulp.src('source/img'))
+}
+exports.images = images;
 // Styles
 
 const styles = () => {
