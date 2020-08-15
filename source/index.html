@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -160,6 +160,11 @@
         <div class="weight-loss__photos weight-loss-photos">
           <div class="weight-loss-photos__photo--before">
             <picture>
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x"
+                media="(min-width:1440px)">
+              <source type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x"
+                media="(min-width:768px)">
               <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width:1440px)">
               <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width:768px)">
               <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="кот до похудения"
@@ -168,6 +173,11 @@
           </div>
           <div class="weight-loss-photos__photo--after">
             <picture>
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x"
+                media="(min-width:1440px)">
+              <source type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
+                media="(min-width:768px)">
               <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width:1440px)">
               <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width:768px)">
               <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="кот после похудения"
@@ -192,7 +202,10 @@
         </p>
       </div>
       <div class="contacts__img">
-        <img src="img/map-pin.png" width="57" height="53" alt="отметка на карте местоположения CatEnergy" />
+        <picture>
+          <source type="image/webp" srcset="img/map-pin.webp">
+          <img src="img/map-pin.png" width="57" height="53" alt="отметка на карте местоположения CatEnergy" />
+        </picture>
       </div>
     </section>
   </main>
@@ -243,7 +256,7 @@
     </div>
 
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

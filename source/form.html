@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -72,7 +72,6 @@
       </nav>
     </div>
   </header>
-
   <main class="main">
     <section class="nutrition-form container">
       <form class="nutrition-form__form" action="https://echo.htmlacademy.ru" method="POST">
@@ -150,7 +149,6 @@
         </div>
       </form>
     </section>
-    <!-- блок с адресом и картой -->
     <section class="contacts container-fluid">
       <div class="contacts__body">
         <h2 class="contacts__title">приглашаем <br>
@@ -160,7 +158,10 @@
         </p>
       </div>
       <div class="contacts__img">
-        <img src="img/map-pin.png" width="57" height="53" alt="отметка на карте местоположения CatEnergy" />
+        <picture>
+          <source type="image/webp" srcset="img/map-pin.webp">
+          <img src="img/map-pin.png" width="57" height="53" alt="отметка на карте местоположения CatEnergy" />
+        </picture>
       </div>
     </section>
   </main>
