@@ -184,10 +184,18 @@
     @media (max-width: $width-mobile+px) {
       left: 101px;
     }
+  }
 
-    &:hover {
-      width: 32px;
-      background: url("../img/icon-right-arrow-verylong.svg") left center no-repeat;
+  &:hover::after {
+    width: 32px;
+    background: url("../img/icon-right-arrow-verylong.svg") left center no-repeat;
+  }
+
+  &:active {
+    color: #b3b3b3;
+
+    &::after {
+      opacity: 0.2;
     }
   }
 }

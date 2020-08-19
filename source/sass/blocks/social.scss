@@ -20,16 +20,43 @@
 .social__link {
   display: inline-block;
   fill: $color_doveGray;
+
+  @media (min-width: $width-mobile+px) {
+    &:hover {
+      fill: #68b738;
+    }
+  }
 }
 
 .social__link--vk {
   width: 23px;
+
+  @media (min-width: $width-tablet+px) {
+    svg {
+      width: 29px;
+      height: 17px;
+    }
+  }
 }
 
 .social__link--inst {
   width: 16px;
+
+  @media (min-width: $width-tablet+px) {
+    svg {
+      width: 23px;
+      height: 23px;
+    }
+  }
 }
 
 .social__link--fb {
   width: 22px;
+
+  @media (min-width: $width-tablet+px) {
+    svg {
+      width: 13px;
+      height: 27px;
+    }
+  }
 }

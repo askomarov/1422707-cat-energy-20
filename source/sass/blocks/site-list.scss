@@ -41,8 +41,7 @@
       color: rgba(255, 255, 255, 0.3);
     }
   }
-  // не могу перенести модификатор выше - белый цвет ссылок тогда побеждает, а там где
-  // они должны быть черными становятся белыми..
+
   &--black {
     color: $color_black;
 
@@ -80,6 +79,10 @@
   }
 
   @media (min-width: $width-mobile+px) {
+    &--active:hover::after {
+      background-color: #b3b3b3;
+    }
+
     &--active::after {
       content: "";
       height: 2px;
