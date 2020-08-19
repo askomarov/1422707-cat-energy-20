@@ -2,27 +2,31 @@ $max-width: 1300;
 $width-desktop: 1440;
 $width-tablet: 768.98;
 $width-mobile: 375.98;
+
 .container {
-   box-sizing: border-box;
-   width: 100%;
-   max-width: $max-width + px;
-   padding-left: 40px;
-   padding-right: 40px;
-   margin: 0 auto;
-   @media (max-width: $width-tablet+px) {
-      padding-left: 30px;
-      padding-right: 30px;
-      max-width: 100%;
-   }
-   @media (max-width: $width-mobile+px) {
-      min-width: 320px;
-      padding-left: 20px;
-      padding-right: 20px;
-   }
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $max-width + px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+
+  @media (max-width: $width-tablet+px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 100%;
+  }
+
+  @media (max-width: $width-mobile+px) {
+    min-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
+
 .container-fluid {
-   min-width: 320px;
-   width: 100%;
-   max-width: 1440px;
-   margin: 0 auto;
+  min-width: 320px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }

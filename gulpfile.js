@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber"); //обработчик ошибок
 const sourcemap = require("gulp-sourcemaps"); //добавляет карты кода для css
+const htmlmin = require('gulp-htmlmin'); //минификация html
 const sass = require("gulp-sass"); //делает из scss - css
 const postcss = require("gulp-postcss"); //библиотека со своими настройками
 const autoprefixer = require("autoprefixer"); //префиксы проставляет
@@ -14,7 +15,6 @@ const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const terser = require("gulp-terser"); //обратка и минифик файлов js
-
 
 //svg sprite
 const sprite = () => {
@@ -44,17 +44,25 @@ const images = () => {
 };
 exports.images = images;
 
+// HTMl
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+};
+exports.html = html;
+
 // Styles
 const styles = () => {
   return gulp.src("source/sass/style.scss") //находим файлы в папке и какой файл
-    .pipe(plumber())  // перерабатываем через функцию -кидаем файл в трубу
-    .pipe(sourcemap.init()) //еще переработки через функции 
+    .pipe(plumber())// перерабатываем через функцию кидаем файл в трубу
+    .pipe(sourcemap.init())//еще переработки через функции
     .pipe(sass()) //получаем готовый файл css
     .pipe(postcss([
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename('styles.min.css'))
+    .pipe(rename('style.min.css'))
     .pipe(sourcemap.write(".")) //положил файл с картами кодами в корневую папку
     .pipe(gulp.dest("build/css")) //галп положи файлы в папку.
     .pipe(sync.stream());
@@ -62,7 +70,6 @@ const styles = () => {
 exports.styles = styles;  //говорим галпу что есть теперь такая задача
 
 //javascript
-
 const scripts = () => {
   return gulp.src('source/js/script.js')
     .pipe(terser())
@@ -94,7 +101,7 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/*.ico",
-    "source/*.html"
+    // "source/*.html"
   ], {
     base: "source"
   })
@@ -122,9 +129,9 @@ exports.build = build;
 const watcher = () => {
   gulp.watch("source/js/**/*.js", gulp.series("scripts"));
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
 };
 
 exports.default = gulp.series(
-  build, styles, scripts, server, watcher
+  build, html, styles, scripts, server, watcher
 );

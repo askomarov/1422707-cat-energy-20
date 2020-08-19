@@ -1,51 +1,58 @@
 .catalog {
-   font-family: "Oswald", "Arial", sans-serif;
-   margin-bottom: 76px;
-   @media (max-width: $width-tablet+px) {
-      margin-bottom: 66px;
-   }
-   @media (max-width: $width-mobile+px) {
-      margin-bottom: 25px;
-   }
+  font-family: "Oswald", "Arial", sans-serif;
+  margin-bottom: 76px;
+
+  @media (max-width: $width-tablet+px) {
+    margin-bottom: 66px;
+  }
+
+  @media (max-width: $width-mobile+px) {
+    margin-bottom: 25px;
+  }
 }
 
 .catalog__title {
-   color: $color_black;
-   font-size: 60px;
-   line-height: 60px;
-   font-weight: normal;
-   margin-top: 74px;
-   margin-bottom: 166px;
-   @media (max-width: $width-tablet+px) {
-      margin-top: 0;
-      margin-bottom: 165px;
-   }
-   @media (max-width: $width-mobile+px) {
-      font-size: 36px;
-      line-height: 36px;
-      margin: 27px 0 39px;
-   }
+  color: $color_black;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: normal;
+  margin-top: 74px;
+  margin-bottom: 166px;
+
+  @media (max-width: $width-tablet+px) {
+    margin-top: 0;
+    margin-bottom: 165px;
+  }
+
+  @media (max-width: $width-mobile+px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 27px 0 39px;
+  }
 }
 
 .catalog__list {
-   margin: 0;
-   padding: 0;
-   display: grid;
-   justify-content: center;
-   column-gap: 80px;
-   row-gap: 143px;
-   grid-template-columns: repeat(auto-fit, 245px);
-   @media (max-width: 1440px) {
-      column-gap: 80px/1440px * 100vw;
-   }
-   @media (max-width: $width-tablet+px) {
-      justify-content: space-between;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 324px));
-      column-gap: 60px/1440px * 100vw;
-      row-gap: 141px;
-   }
-   @media (max-width: $width-mobile+px) {
-      gap: 0;
-      grid-template-columns: 1fr;
-   }
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  column-gap: 80px;
+  row-gap: 143px;
+  grid-template-columns: repeat(auto-fit, 245px);
+
+  @media (max-width: 1440px) {
+    column-gap: 80px/1440px * 100vw;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 324px));
+    column-gap: 60px/1440px * 100vw;
+    row-gap: 141px;
+  }
+
+  @media (max-width: $width-mobile+px) {
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
 }
