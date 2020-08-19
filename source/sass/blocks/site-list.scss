@@ -1,105 +1,117 @@
 .site-list {
-   margin: 0;
-   padding: 0;
-   font-family: "Oswald", "Arial", sans-serif;
-   display: flex;
-   justify-content: space-between;
-   @media (max-width: $width-mobile+px) {
-      flex-direction: column;
-      gap: 0;
-   }
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $width-mobile+px) {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 .site-list__item {
-   list-style: none;
+  list-style: none;
 }
 
 .site-list__link {
-   position: relative;
-   font-weight: normal;
-   font-size: 20px;
-   line-height: 30px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-decoration: none;
-   text-transform: uppercase;
-   color: $color_white;
-   @media (max-width: $width-tablet+px) {
-      font-size: 18px;
-      line-height: 24px;
-   }
-   @media (min-width: 375px) {
+  position: relative;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color_white;
+
+  @media (max-width: $width-tablet+px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 375px) {
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  // не могу перенести модификатор выше - белый цвет ссылок тогда побеждает, а там где
+  // они должны быть черными становятся белыми..
+  &--black {
+    color: $color_black;
+
+    @media (min-width: 375px) {
       &:hover {
-         color: rgba(255, 255, 255, 0.6);
+        color: #666666;
       }
+
       &:active {
-         color: rgba(255, 255, 255, 0.3);
+        color: #b3b3b3;
       }
-   }
-   // не могу перенести модификатор выше - белый цвет ссылок тогда побеждает, а там где
-   // они должны быть черными становятся белыми..
-   &--black {
-      color: $color_black;
-      @media (min-width: 375px) {
-         &:hover {
-            color: #666666;
-         }
-         &:active {
-            color: #b3b3b3;
-         }
-      }
-   }
+    }
+  }
 
-   @media (max-width: $width-tablet+px) {
-      color: $color_black;
-      &:hover {
-         color: #666666;
-      }
-      &:active {
-         color: #b3b3b3;
-      }
-   }
+  @media (max-width: $width-tablet+px) {
+    color: $color_black;
 
-   @media (max-width: $width-mobile+px) {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 20px;
-      box-sizing: border-box;
-      height: 66px;
-      padding: 22px 0 24px;
-      border-top: 1px solid #e6e6e6;
-   }
+    &:hover {
+      color: #666666;
+    }
 
-   @media (min-width: $width-mobile+px) {
-      &--active::after {
-         content: "";
-         height: 2px;
-         width: 100%;
-         position: absolute;
-         bottom: -10px;
-         left: 0;
-         right: 0;
-         background: $color_apple;
-         @media (min-width: $width-tablet+px) {
-            background: $color_white;
-         }
-         @media (min-width: $width-desktop+px) {
-            bottom: -8px;
-         }
+    &:active {
+      color: #b3b3b3;
+    }
+  }
+
+  @media (max-width: $width-mobile+px) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+    height: 66px;
+    padding: 22px 0 24px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $width-mobile+px) {
+    &--active::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      background: $color_apple;
+
+      @media (min-width: $width-tablet+px) {
+        background: $color_white;
       }
-   }
+
+      @media (min-width: $width-desktop+px) {
+        bottom: -8px;
+      }
+    }
+  }
 }
+
 .site-list__item--active .site-list__link--black::after {
-   content: "";
-   height: 2px;
-   width: 100%;
-   position: absolute;
-   bottom: -8px;
-   left: 0;
-   right: 0;
-   background: $color_apple;
-   @media (max-width: $width-mobile+px) {
-      display: none;
-   }
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  background: $color_apple;
+
+  @media (max-width: $width-mobile+px) {
+    display: none;
+  }
 }

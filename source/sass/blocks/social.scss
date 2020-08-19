@@ -1,34 +1,35 @@
 .social__list {
-   font-family: "Oswald", "Arial", sans-serif;
-   padding: 0;
-   margin: 0 auto;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   width: 130px;
-   height: 33px;
-   @media (max-width: $width-mobile+px) {
-      height: 22px;
-   }
+  font-family: "Oswald", "Arial", sans-serif;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  height: 33px;
+
+  @media (max-width: $width-mobile+px) {
+    height: 22px;
+  }
 }
 
 .social__item {
-   list-style: none;
+  list-style: none;
 }
 
 .social__link {
-   display: inline-block;
-   fill: $color_doveGray;
+  display: inline-block;
+  fill: $color_doveGray;
 }
 
 .social__link--vk {
-   width: 23px;
+  width: 23px;
 }
 
 .social__link--inst {
-   width: 16px;
+  width: 16px;
 }
 
 .social__link--fb {
-   width: 22px;
+  width: 22px;
 }
