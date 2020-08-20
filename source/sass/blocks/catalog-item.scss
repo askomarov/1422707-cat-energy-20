@@ -30,8 +30,7 @@
   width: 172px;
   height: 174px;
   align-self: center;
-  margin-top: -82px;
-  margin-bottom: 41px;
+  margin: -82px auto 41px;
 
   img {
     position: absolute;
@@ -97,6 +96,7 @@
 .catalog-item__title {
   box-sizing: border-box;
   padding: 0;
+  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   font-weight: normal;
@@ -104,10 +104,6 @@
   line-height: 21px;
   width: 158px;
   margin: 0 auto 17px;
-
-  br {
-    display: none;
-  }
 
   @media (max-width: $width-mobile+px) {
     margin: 0;

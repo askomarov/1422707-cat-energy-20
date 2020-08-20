@@ -85,4 +85,14 @@
   height: 40px;
   background: $color_concrete;
   color: $color_tundora;
+
+  @media (min-width: $width-mobile+px) {
+    &:hover {
+      background-color: #5eaa2f;
+      color: $color_white;
+    }
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

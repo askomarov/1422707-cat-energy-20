@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body">
+<body class="page">
   <svg style="display: none">
     <symbol id="icon-vk" viewBox="0 0 22 12">
       <path
@@ -51,7 +51,7 @@
         <picture>
           <source srcset="img/logo-desktop.svg" media="(min-width:1440px)">
           <source srcset="img/logo-tablet.svg" media="(min-width:768px)">
-          <img src="img/logo-mobile.svg" alt="логотип CatEnergy" width="190.4" height="37.6" />
+          <img src="img/logo-mobile.svg" alt="логотип CatEnergy" width="190" height="38" />
         </picture>
       </a>
       <nav class="header-menu">
@@ -81,7 +81,7 @@
       <div class="hero__content">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
-        <a href="#" class="btn hero__btn">подобрать программу</a>
+        <a href="form.html" class="btn hero__btn">подобрать программу</a>
         <div class="hero__img">
           <picture>
             <source type="image/wepb" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x"
@@ -159,7 +159,7 @@
               000 РУБ.</span></p>
         </div>
         <div class="weight-loss__photos weight-loss-photos">
-          <div class="weight-loss-photos__photo--before">
+          <div class="weight-loss-photos__photo weight-loss-photos__photo--before">
             <picture>
               <source type="image/webp" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x"
                 media="(min-width:1440px)">
@@ -172,15 +172,15 @@
                 width="232" height="280" />
             </picture>
           </div>
-          <div class="weight-loss-photos__photo--after">
+          <div class="weight-loss-photos__photo weight-loss-photos__photo--after">
             <picture>
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x"
                 media="(min-width:1440px)">
+              <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width:1440px)">
               <source type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
                 media="(min-width:768px)">
-              <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width:1440px)">
               <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width:768px)">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
               <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="кот после похудения"
                 width="232" height="280" />
             </picture>
@@ -188,7 +188,9 @@
           <div class="weight-loss-photos__separator"></div>
           <div class="weight-loss-photos__bottom">
             <button type="button" class="weight-loss-photos__btn">Было</button>
-            <div class="weight-loss-photos__line"></div>
+            <div class="weight-loss-photos__line">
+              <button class="weight-loss-photos__toggle-btn" type="button">До/После</button>
+            </div>
             <button type="button" class="weight-loss-photos__btn">стало</button>
           </div>
         </div>
@@ -230,7 +232,7 @@
           <li class="social__item">
             <a href="" class="social__link social__link--inst">
               <span class="visually-hidden">instagram</span>
-              <svg width="16.1" height="16">
+              <svg width="16" height="16">
                 <use xlink:href="#icon-inst"></use>
               </svg>
             </a>

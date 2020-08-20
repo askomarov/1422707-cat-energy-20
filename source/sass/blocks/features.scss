@@ -40,10 +40,7 @@
 
   @media (max-width: 830px) {
     grid-template-columns: 1fr 1fr;
-    // grid-template-columns: repeat(2, minmax(200px, 250px));
-    // column-gap: 60px;
     row-gap: 91px/768px * 100vw;
-    // justify-content: space-between;
   }
 
   @media (max-width: 510px) {

@@ -1,6 +1,7 @@
 //подлючаем стили общих блоков
 @import "variables.scss";
 @import "fonts.scss";
+@import "main.scss";
 @import "page.scss";
 @import "ui.scss";
 @import "container.scss";
@@ -11,8 +12,6 @@
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/inner-title.scss";
-
-//стили блоков index.html
 @import "blocks/hero.scss";
 @import "blocks/nutrition-program.scss";
 @import "blocks/program-item.scss";
@@ -22,11 +21,7 @@
 @import "blocks/weight-loss.scss";
 @import "blocks/weight-loss-photos.scss";
 @import "blocks/weight-loss-description.scss";
-
-//стили блоков form.html
 @import "blocks/nutrition-form.scss";
-
-//стили блоков catalog.html
 @import "blocks/catalog.scss";
 @import "blocks/catalog-item.scss";
 @import "blocks/catalog-more-products.scss";

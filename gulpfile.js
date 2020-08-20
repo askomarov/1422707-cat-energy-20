@@ -47,7 +47,10 @@ exports.images = images;
 // HTMl
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest('build'));
 };
 exports.html = html;
@@ -101,7 +104,6 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/*.ico",
-    // "source/*.html"
   ], {
     base: "source"
   })

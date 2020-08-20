@@ -10,7 +10,6 @@
   }
 
   @media (max-width: $width-mobile+px) {
-    // background-size: 320px 305px;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -112,7 +111,6 @@
 
   @media (max-width: $width-tablet+px) {
     margin-top: -111px;
-    // left: -88px/768px * 100vw;
     position: relative;
     z-index: 0;
     right: 0;

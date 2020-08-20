@@ -25,6 +25,9 @@
     &:hover {
       fill: #68b738;
     }
+    &:active {
+      fill: rgba($color: #68b738, $alpha: 0.6);
+    }
   }
 }
 

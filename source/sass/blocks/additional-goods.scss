@@ -61,7 +61,6 @@
   margin: 0;
   height: 72px;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   border: 1px solid #cdcdcd;
   border-left: none;
@@ -134,7 +133,7 @@
   color: $color_tundora;
   flex: 0 1 244px;
   padding-left: 50px;
-  margin-right: 50px;
+  margin: 0 0 0 50px;
   padding-top: 7px;
 
   @media (max-width: $width-tablet+px) {
