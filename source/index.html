@@ -55,7 +55,7 @@
         </picture>
       </a>
       <nav class="header-menu">
-        <button type="button" class="header-menu__toggle">
+        <button type="button" class="header-menu__toggle header-menu__toggle--no-js">
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
         <div class="header-menu__wrapper header-menu__wrapper--no-js">
@@ -97,7 +97,6 @@
           </picture>
         </div>
       </div>
-    </section>
     </section>
     <section class="nutrition-program container">
       <h2 class="visually-hidden">Выбор программы питания для котов и кошек</h2>
@@ -196,19 +195,22 @@
         </div>
       </div>
     </section>
-    <section class="contacts container-fluid">
-      <div class="contacts__body contacts__body--white">
-        <h2 class="contacts__title">приглашаем <br>
-          к сотрудничеству <br> дилеров!</h2>
-        <p class="contacts__text">
-          ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург
-        </p>
-      </div>
-      <div class="contacts__img">
-        <picture>
-          <source type="image/webp" srcset="img/map-pin.webp">
-          <img src="img/map-pin.png" width="57" height="53" alt="отметка на карте местоположения CatEnergy" />
-        </picture>
+    <section class="contacts">
+      <div class="contacts__map-wrapper"><iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/COEsvec" width="560" height="400" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+      <div class="contacts__container container">
+        <div class="contacts__body contacts__body--white">
+          <h2 class="contacts__title">приглашаем <br>
+            к сотрудничеству <br> дилеров!</h2>
+          <p class="contacts__text">
+            ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург
+          </p>
+        </div>
+        <div class="contacts__img">
+          <picture>
+            <source type="image/webp" srcset="img/map-pin.webp">
+            <img src="img/map-pin.png" width="57" height="53" alt="отметка на карте местоположения CatEnergy" />
+          </picture>
+        </div>
       </div>
     </section>
   </main>

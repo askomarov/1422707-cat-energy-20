@@ -5,8 +5,12 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: $width-mobile+px) {
+  @media (max-width: 420px){
     flex-direction: column;
+    gap: 20px;
+  }
+
+  @media (max-width: $width-mobile+px) {
     gap: 0;
   }
 }

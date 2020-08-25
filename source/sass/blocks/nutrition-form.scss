@@ -296,6 +296,10 @@
   border: 1px solid $color_mercury;
   height: 52px;
 
+  &:disabled {
+    opacity: 0.7;
+  }
+
   &:hover {
     border-color: #cdcdcd;
   }
@@ -325,6 +329,14 @@
   margin: 0;
   padding: 0;
   display: none;
+
+  &:disabled {
+    & + .nutrition-form__label--radio::before,
+    & + .nutrition-form__label--radio::after,
+    & + .nutrition-form__label--radio {
+      opacity: 0.5;
+    }
+  }
 }
 
 .nutrition-form__input-radio:checked + .nutrition-form__label--radio::before {
@@ -335,6 +347,14 @@
   margin: 0;
   padding: 0;
   display: none;
+
+  &:disabled {
+    & + .nutrition-form__label--checkbox::before,
+    & + .nutrition-form__label--checkbox::after,
+    & + .nutrition-form__label--checkbox {
+      opacity: 0.5;
+    }
+  }
 
   &:checked + .nutrition-form__label--checkbox::before {
     display: block;
