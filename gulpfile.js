@@ -38,7 +38,8 @@ const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}") //** - смотрит в любую вложенность
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
-      imageminJpegtran({ progressive: true }),
+      imagemin.mozjpeg({progressive: true}),
+      // imageminJpegtran({ progressive: true }),
       imagemin.svgo()
     ]));
 };

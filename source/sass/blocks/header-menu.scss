@@ -28,14 +28,14 @@
     border: none;
     width: 24px;
     height: 18px;
-    background: url("../img/icon-mobile-menu.svg") center no-repeat;
+    background: url("../img/icon-close.svg") center no-repeat;
 
     &--no-js {
       display: none;
     }
 
-    &--cross {
-      background: url("../img/icon-close.svg") center no-repeat;
+    &--closed {
+      background: url("../img/icon-mobile-menu.svg") center no-repeat;
     }
   }
 }

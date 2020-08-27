@@ -153,6 +153,11 @@
   position: absolute;
   top: 130px;
   right: 355px;
+  display: none;
+
+  &--no-js {
+    display: inline-block;
+  }
 
   img {
     position: absolute;
