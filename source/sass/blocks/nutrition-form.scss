@@ -114,6 +114,7 @@
   .nutrition-form__input {
     height: 52px;
     padding-left: 21px;
+
     &:focus {
       padding-left: 20px;
     }
@@ -326,9 +327,16 @@
 }
 
 .nutrition-form__input-radio {
-  margin: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-  display: none;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 
   &:disabled {
     & + .nutrition-form__label--radio::before,
@@ -344,9 +352,16 @@
 }
 
 .nutrition-form__input-checkbox {
-  margin: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-  display: none;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 
   &:disabled {
     & + .nutrition-form__label--checkbox::before,
@@ -358,6 +373,10 @@
 
   &:checked + .nutrition-form__label--checkbox::before {
     display: block;
+  }
+
+  &:focus + .nutrition-form__label--checkbox::after {
+    box-shadow: inset 0 0 0 1px $color_apple;
   }
 }
 
@@ -388,7 +407,9 @@
   flex: 0 1 100%;
   margin: 0 auto 67px;
   display: flex;
-  gap: 78px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 25px;
 
   @media (max-width: $width-tablet+px) {
     padding: 0 35px/768px * 100vw 0 40px/768px * 100vw;
@@ -404,7 +425,7 @@
   }
 
   .nutrition-form__label {
-    flex: 0 1 50%;
+    flex: 0 1 569px;
     display: flex;
     align-items: center;
     gap: 19px;
@@ -421,6 +442,7 @@
   .nutrition-form__input {
     flex: 1 1 auto;
     padding-left: 16px;
+
     &:focus {
       padding-left: 15px;
     }
@@ -516,6 +538,10 @@
     font-size: 16px;
     line-height: 20px;
     width: 100%;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px $color_apple;
   }
 }
 

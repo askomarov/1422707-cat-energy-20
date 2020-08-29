@@ -76,7 +76,7 @@
   align-items: center;
   background: $color_white;
   width: 570px;
-  height: 201px;
+  min-height: 114px;
 
   &--white {
     background: $color_white;
@@ -84,7 +84,6 @@
 
   @media (max-width: $width-tablet+px) {
     padding: 1px 72px 0 71px;
-    height: 200px;
     top: -200px;
     left: 0;
     width: 100%;
@@ -96,13 +95,16 @@
   }
 
   @media (max-width: $width-mobile+px) {
-    height: 114px;
     padding: 20px 19px 22px;
     top: -114px;
 
     &--white {
       background: $color_white;
     }
+  }
+
+  @media (min-width: $width-mobile+px) {
+    min-height: 201px;
   }
 }
 

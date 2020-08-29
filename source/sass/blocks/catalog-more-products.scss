@@ -88,11 +88,12 @@
 
   @media (min-width: $width-mobile+px) {
     &:hover {
-      background-color: #5eaa2f;
-      color: $color_white;
+      background-color: #ebebeb;
+      color: $color_tundora;
     }
   }
+
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba($color: $color_tundora, $alpha: 0.3);
   }
 }

@@ -15,7 +15,7 @@ function init() {
   let mapPin = document.querySelector('.contacts__img');
   mapPin.classList.remove('contacts__img--no-js')
   // Создание карты.
-  let myMap = new ymaps.Map("map", {
+  let myMap = new ymaps.Map('map', {
     // Координаты центра карты.
     center: [59.938572, 30.320009],
     // Уровень масштабирования. Допустимые значения:
@@ -37,6 +37,4 @@ function init() {
       });
   // Добавим метку на карту.
   myMap.geoObjects.add(myPlacemark);
-
 }
-
