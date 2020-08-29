@@ -69,14 +69,6 @@
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
-
-    @media (max-width: $width-tablet+px) {
-      min-height: 139px;
-    }
-
-    @media (max-width: $width-mobile+px) {
-      height: auto;
-    }
   }
 
   @media (max-width: $width-tablet+px) {
@@ -90,7 +82,7 @@
   }
 
   @media (max-width: $width-mobile+px) {
-    height: auto;
+    min-height: 72px;
     border-left: none;
     border-right: none;
     padding: 13px 0 17px;
@@ -145,7 +137,7 @@
     flex: auto;
     font-size: 14px;
     line-height: 14px;
-    margin-right: 0;
+    margin: 0;
     padding: 0;
     text-align: left;
   }

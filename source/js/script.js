@@ -5,7 +5,7 @@
   menuButton.classList.remove('header-menu__toggle--no-js')
   menuButton.addEventListener('click', function (event) {
     event.preventDefault();
-    menuButton.classList.toggle('header-menu__toggle--closed');
+    menuButton.classList.toggle('header-menu__toggle--cross');
     mainMenu.classList.toggle('header-menu__wrapper--shown');
   })
 })();
