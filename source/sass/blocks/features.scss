@@ -1,48 +1,51 @@
 .features {
-   font-family: "Oswald", "Arial", sans-serif;
-   padding: 0px 0px 11px 0px;
-   @media (max-width: $width-tablet+px) {
-      padding: 0px 0px 61px 0px;
-   }
-   @media (max-width: $width-mobile+px) {
-      padding: 0px 0px 42px 0px;
-   }
+  font-family: "Oswald", "Arial", sans-serif;
+  padding: 0 0 11px 0;
+
+  @media (max-width: $width-tablet+px) {
+    padding: 0 0 61px 0;
+  }
+
+  @media (max-width: $width-mobile+px) {
+    padding: 0 0 42px 0;
+  }
 }
 
 .features__title {
-   font-size: 60px;
-   line-height: 60px;
-   font-weight: normal;
-   margin: 0;
-   margin-bottom: 72px;
-   @media (max-width: $width-mobile+px) {
-      font-size: 36px;
-      line-height: 40px;
-      margin-bottom: 38px;
-   }
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 72px;
+
+  @media (max-width: $width-mobile+px) {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 38px;
+  }
 }
 
 .features__items {
-   counter-reset: section;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 80px;
-   @media (max-width: $width-desktop+px) {
-      gap: 80px/1440px * 100vw;
-   }
-   @media (max-width: 830px) {
-      grid-template-columns: 1fr 1fr;
-      // grid-template-columns: repeat(2, minmax(200px, 250px));
-      // column-gap: 60px;
-      row-gap: 91px/768px * 100vw;
-      // justify-content: space-between;
-   }
-   @media (max-width: 510px) {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, minmax(60px, auto));
-      gap: 20px;
-   }
+  counter-reset: section;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+
+  @media (max-width: $width-desktop+px) {
+    gap: 80px/1440px * 100vw;
+  }
+
+  @media (max-width: 830px) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 91px/768px * 100vw;
+  }
+
+  @media (max-width: 510px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, minmax(60px, auto));
+    gap: 20px;
+  }
 }
