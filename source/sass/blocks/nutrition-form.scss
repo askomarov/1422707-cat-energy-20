@@ -29,8 +29,7 @@
   margin: 73px auto 56px;
 
   @media (max-width: $width-tablet+px) {
-    margin: 54px auto 54px;
-    margin-left: -1px;
+    margin: 2px auto 54px -1px;
   }
 
   @media (max-width: $width-mobile+px) {
@@ -115,8 +114,16 @@
     height: 52px;
     padding-left: 21px;
 
-    &:focus {
+    &:focus,
+    &:active {
       padding-left: 20px;
+      border-color: $color_tundora;
+    }
+
+    &:invalid {
+      padding-left: 20px;
+      border: 2px solid #ff8282;
+      // border-color: #ff8282;
     }
 
     @media (max-width: $width-mobile+px) {
@@ -185,7 +192,8 @@
       box-sizing: border-box;
       content: "";
       position: absolute;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       left: 0;
       width: 40px;
       height: 40px;
@@ -240,7 +248,8 @@
       box-sizing: border-box;
       content: "";
       position: absolute;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       left: 0;
       width: 40px;
       height: 40px;
@@ -363,6 +372,18 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
+  &:hover + .nutrition-form__label--checkbox::after {
+    border-color: #bababa;
+  }
+
+  &:active {
+    + .nutrition-form__label--checkbox,
+    + .nutrition-form__label--checkbox::after {
+      border-color: #eaeaea;
+      color: #b3b3b3;
+    }
+  }
+
   &:disabled {
     & + .nutrition-form__label--checkbox::before,
     & + .nutrition-form__label--checkbox::after,
@@ -390,7 +411,7 @@
   margin: 0 auto 61px;
 
   @media (max-width: 822px) {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     row-gap: 32px;
   }
 
@@ -445,6 +466,11 @@
 
     &:focus {
       padding-left: 15px;
+      border-color: $color_tundora;
+    }
+
+    &:invalid {
+      border-color: #ff8282;
     }
   }
 }
@@ -466,6 +492,12 @@
 
     @media (max-width: $width-mobile+px) {
       margin-bottom: 34px;
+    }
+  }
+
+  @media (min-width: $width-mobile+px) {
+    br {
+      display: none;
     }
   }
 }
@@ -559,7 +591,7 @@
   }
 
   @media (max-width: $width-tablet+px) {
-    margin-left: 63px/768px * 100vw;
+    margin-left: 58px/768px * 100vw;
   }
 
   @media (max-width: 600px) {
@@ -597,7 +629,9 @@
     transform: translateY(-50%);
   }
 }
-
+.nutrition-form__input:invalid + .nutrition-form__label-svg {
+  fill: #ff8282;
+}
 .nutrition-form__input:focus + .nutrition-form__label-svg {
   fill: $color_apple;
 }

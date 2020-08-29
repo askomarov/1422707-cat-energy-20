@@ -81,9 +81,8 @@
           <a class="catalog-item__item-link" href="product.html">
             <div class="catalog-item__img">
               <picture>
-                <source type="image/wepb"
-                  srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x"
-                  media="(min-width:1440px)">
+                <source srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x"
+                  media="(min-width:1440px)" type="image/webp">
                 <source srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.jpg 2x"
                   media="(min-width:1440px)">
                 <source srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x"
@@ -100,7 +99,7 @@
           </a>
           <div class="catalog-item__text-content">
             <a href="product.html" class="catalog-item__item-link">
-              <h3 class="catalog-item__title">Cat Energy<br> PRO 500 г</h3>
+              <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="catalog-item__list">
               <div class="catalog-item__item">
@@ -139,7 +138,7 @@
           </a>
           <div class="catalog-item__text-content">
             <a class="catalog-item__item-link" href="product.html">
-              <h3 class="catalog-item__title">Cat Energy<br> PRO 1000 г</h3>
+              <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="catalog-item__list">
               <div class="catalog-item__item">
@@ -178,7 +177,7 @@
           </a>
           <div class="catalog-item__text-content">
             <a class="catalog-item__item-link" href="product.html">
-              <h3 class="catalog-item__title">Cat Energy<br> PRO 500 г</h3>
+              <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="catalog-item__list">
               <div class="catalog-item__item">
@@ -216,7 +215,7 @@
           </a>
           <div class="catalog-item__text-content">
             <a class="catalog-item__item-link" href="product.html">
-              <h3 class="catalog-item__title">Cat Energy<br> PRO 1000 г</h3>
+              <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="catalog-item__list">
               <div class="catalog-item__item">
@@ -258,7 +257,7 @@
           </a>
           <div class="catalog-item__text-content">
             <a class="catalog-item__item-link" href="product.html">
-              <h3 class="catalog-item__title">Cat Energy<br> slim 500 г</h3>
+              <h3 class="catalog-item__title">Cat Energy slim 500 г</h3>
             </a>
             <dl class="catalog-item__list">
               <div class="catalog-item__item">
@@ -300,7 +299,7 @@
           </a>
           <div class="catalog-item__text-content">
             <a class="catalog-item__item-link" href="product.html">
-              <h3 class="catalog-item__title">Cat Energy<br> slim 1000 г</h3>
+              <h3 class="catalog-item__title">Cat Energy slim 1000 г</h3>
             </a>
             <dl class="catalog-item__list">
               <div class="catalog-item__item">
@@ -339,7 +338,7 @@
           </a>
           <div class="catalog-item__text-content">
             <a class="catalog-item__item-link" href="product.html">
-              <h3 class="catalog-item__title">Cat Energy<br> slim 500 г</h3>
+              <h3 class="catalog-item__title">Cat Energy slim 500 г</h3>
             </a>
             <dl class="catalog-item__list">
               <div class="catalog-item__item">
@@ -423,10 +422,11 @@
           <p class="gift-block__text">Закажите все <br>и получите чехол для <br>
             кота в подарок!</p>
         </div>
+      </div>
     </section>
 
     <section class="contacts">
-      <div id="map" class="contacts__map" style="width: 100%; min-height: 400px"></div>
+      <div id="map" class="contacts__map"></div>
       <div class="contacts__container container">
         <div class="contacts__body contacts__body--white">
           <h2 class="contacts__title">приглашаем <br>
@@ -449,34 +449,32 @@
       <a href="index.html" class="footer__logo logo-text">
         <img src="img/logo-footer.svg" width="128" height="24" alt="текстовый логотип CatEnergy" />
       </a>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="" class="social__link social__link--vk">
-              <span class="visually-hidden">Vkontakte</span>
-              <svg width="22" height="12">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="" class="social__link social__link--inst">
-              <span class="visually-hidden">instagram</span>
-              <svg width="16" height="16">
-                <use xlink:href="#icon-inst"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="" class="social__link social__link--fb">
-              <span class="visually-hidden">facebook</span>
-              <svg width="10" height="19">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link footer__social-link--vk">
+            <span class="visually-hidden">Vkontakte</span>
+            <svg width="22" height="12">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link footer__social-link--inst">
+            <span class="visually-hidden">instagram</span>
+            <svg width="16" height="16">
+              <use xlink:href="#icon-inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link footer__social-link--fb">
+            <span class="visually-hidden">facebook</span>
+            <svg width="10" height="19">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
       <div class="footer__copy">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__academy-logo">
           <p class="footer__text">HTML Academy</p>
@@ -487,9 +485,8 @@
       </div>
     </div>
   </footer>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=3a8632c8-6d77-4085-bbe1-360740e653fe&lang=ru_RU"
-    type="text/javascript">
-    </script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=3a8632c8-6d77-4085-bbe1-360740e653fe&lang=ru_RU">
+  </script>
   <script src="js/script.min.js"></script>
 </body>
 

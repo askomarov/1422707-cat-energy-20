@@ -107,15 +107,11 @@
 
   @media (max-width: $width-mobile+px) {
     margin: 0;
-    width: auto;
+    max-width: 100px;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 15px;
     text-align: left;
-
-    br {
-      display: block;
-    }
   }
 }
 
@@ -154,5 +150,4 @@
 .catalog-item__btn {
   height: 40px;
   grid-column: 1/-1;
-  margin-top: 2px;
 }

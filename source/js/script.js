@@ -1,6 +1,7 @@
 (function () {
   let menuButton = document.querySelector('.header-menu__toggle');
   let mainMenu = document.querySelector('.header-menu__wrapper');
+  mainMenu.classList.remove('header-menu__wrapper--no-js')
   menuButton.classList.remove('header-menu__toggle--no-js')
   menuButton.addEventListener('click', function (event) {
     event.preventDefault();

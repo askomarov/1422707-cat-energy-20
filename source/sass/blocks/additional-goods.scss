@@ -59,7 +59,7 @@
 .additional-goods__item {
   box-sizing: border-box;
   margin: 0;
-  height: 72px;
+  min-height: 72px;
   display: flex;
   align-items: center;
   border: 1px solid #cdcdcd;
@@ -69,10 +69,9 @@
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
-    height: 73px;
 
     @media (max-width: $width-tablet+px) {
-      height: 139px;
+      min-height: 139px;
     }
 
     @media (max-width: $width-mobile+px) {
@@ -81,7 +80,7 @@
   }
 
   @media (max-width: $width-tablet+px) {
-    height: 139px;
+    min-height: 139px;
     margin: 0;
     padding: 22px 38px 28px 36px;
     flex-wrap: wrap;
@@ -132,7 +131,6 @@
   line-height: 20px;
   color: $color_tundora;
   flex: 0 1 244px;
-  padding-left: 50px;
   margin: 0 0 0 50px;
   padding-top: 7px;
 
