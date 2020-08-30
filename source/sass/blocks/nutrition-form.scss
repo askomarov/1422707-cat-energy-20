@@ -120,10 +120,9 @@
       border-color: $color_tundora;
     }
 
-    &:invalid {
+    &:not(:placeholder-shown):invalid {
       padding-left: 20px;
       border: 2px solid #ff8282;
-      // border-color: #ff8282;
     }
 
     @media (max-width: $width-mobile+px) {
@@ -469,7 +468,7 @@
       border-color: $color_tundora;
     }
 
-    &:invalid {
+    &:not(:placeholder-shown):invalid {
       border-color: #ff8282;
     }
   }
@@ -629,9 +628,11 @@
     transform: translateY(-50%);
   }
 }
-.nutrition-form__input:invalid + .nutrition-form__label-svg {
+
+.nutrition-form__input:not(:placeholder-shown):invalid + .nutrition-form__label-svg {
   fill: #ff8282;
 }
+
 .nutrition-form__input:focus + .nutrition-form__label-svg {
   fill: $color_apple;
 }

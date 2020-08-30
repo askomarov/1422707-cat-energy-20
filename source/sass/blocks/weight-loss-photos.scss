@@ -26,6 +26,10 @@
       left: 0;
     }
   }
+
+  @media (max-width: $width-mobile+px) {
+    margin: 0 0 31px 0;
+  }
 }
 
 .weight-loss-photos__photo--after {
@@ -48,7 +52,6 @@
   }
 
   @media (max-width: $width-mobile+px) {
-    margin-left: 2px;
     width: 100%;
     justify-content: center;
   }
@@ -103,6 +106,7 @@
   @media (max-width: $width-mobile+px) {
     height: 14px;
     border: 1px solid #cdcdcd;
+    margin: 0 12px 0 15px;
   }
 }
 
